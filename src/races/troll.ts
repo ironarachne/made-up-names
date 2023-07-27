@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-import NameGenerator from '../generator';
-import GenericNameGenerator from '../generators/generic';
-import GeneratorSet from '../generatorset';
+import NameGenerator from "../generator.js";
+import GenericNameGenerator from "../generators/generic.js";
+import GeneratorSet from "../generatorset.js";
 
 export default class TrollSet extends GeneratorSet {
   constructor() {
@@ -17,42 +17,42 @@ function family(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    'Apvlnvn',
-    'vpvcnvn',
-    'vSHlvnp',
-    'SnvTH',
-    'pvvLOR',
-    'pv+PER',
-    'sLvTCHER',
-    'svRRIER',
-    'pvnDElSON',
-    'pvnDElS',
-    'vvpSBURG',
-    'vvpSBERG',
-    'vlnvTHION',
-    'vpRvHAM',
-    'vcpLAND',
-    'vcpLvND',
-    'vcfFORD',
-    'vcnFvRD',
+    "Apvlnvn",
+    "vpvcnvn",
+    "vSHlvnp",
+    "SnvTH",
+    "pvvLOR",
+    "pv+PER",
+    "sLvTCHER",
+    "svRRIER",
+    "pvnDElSON",
+    "pvnDElS",
+    "vvpSBURG",
+    "vvpSBERG",
+    "vlnvTHION",
+    "vpRvHAM",
+    "vcpLAND",
+    "vcpLvND",
+    "vcfFORD",
+    "vcnFvRD",
   ];
 
   const prefixes = [
-    'SMASH',
-    'BULL',
-    'RAGE',
-    'DEATH',
-    'MURDER',
-    'SKULL',
-    'FIGHT',
-    'BREAK',
-    'WAR',
-    'BATTLE',
-    'GROG',
-    'FEAR',
+    "SMASH",
+    "BULL",
+    "RAGE",
+    "DEATH",
+    "MURDER",
+    "SKULL",
+    "FIGHT",
+    "BREAK",
+    "WAR",
+    "BATTLE",
+    "GROG",
+    "FEAR",
   ];
 
-  const suffixes = ['FIST', 'SMASH', 'REND', 'BLADE', 'AXE', 'CHOPPER', 'CUTTER', 'KILLER'];
+  const suffixes = ["FIST", "SMASH", "REND", "BLADE", "AXE", "CHOPPER", "CUTTER", "KILLER"];
 
   for (let i = 0; i < prefixes.length; i++) {
     for (let j = 0; j < suffixes.length; j++) {
@@ -67,16 +67,16 @@ function female(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    'vnvlA',
-    'vnv',
-    'vc+vlvN',
-    'vlvnA',
-    'vcnvA',
-    'cvlvNIA',
-    'cvlvNA',
-    'pvdvpa',
-    'vpBvZA',
-    'vppvsA',
+    "vnvlA",
+    "vnv",
+    "vc+vlvN",
+    "vlvnA",
+    "vcnvA",
+    "cvlvNIA",
+    "cvlvNA",
+    "pvdvpa",
+    "vpBvZA",
+    "vppvsA",
   ];
 
   return gen;
@@ -86,25 +86,25 @@ function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    'vFFlvn',
-    'cvclvn',
-    'vpvlvn',
-    'cvLLvvn',
-    'cvlvpul',
-    'vppvl',
-    'pvspvn',
-    'pv+lvn',
-    'pvlsvp',
-    'pvDRvC',
-    'pvp',
-    'pvpvp',
-    'pvppvs',
-    'pAlpvs',
-    'pAlpvG',
-    'svRM',
-    'svRN',
-    'svRNpvK',
-    'pv+pvK',
+    "vFFlvn",
+    "cvclvn",
+    "vpvlvn",
+    "cvLLvvn",
+    "cvlvpul",
+    "vppvl",
+    "pvspvn",
+    "pv+lvn",
+    "pvlsvp",
+    "pvDRvC",
+    "pvp",
+    "pvpvp",
+    "pvppvs",
+    "pAlpvs",
+    "pAlpvG",
+    "svRM",
+    "svRN",
+    "svRNpvK",
+    "pv+pvK",
   ];
 
   return gen;

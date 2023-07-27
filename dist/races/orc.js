@@ -1,11 +1,7 @@
-'use strict';
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const generic_1 = __importDefault(require("../generators/generic"));
-const generatorset_1 = __importDefault(require("../generatorset"));
-class OrcSet extends generatorset_1.default {
+"use strict";
+import GenericNameGenerator from "../generators/generic.js";
+import GeneratorSet from "../generatorset.js";
+export default class OrcSet extends GeneratorSet {
     constructor() {
         super();
         this.family = family();
@@ -13,44 +9,43 @@ class OrcSet extends generatorset_1.default {
         this.male = male();
     }
 }
-exports.default = OrcSet;
 function family() {
-    let gen = new generic_1.default();
+    let gen = new GenericNameGenerator();
     gen.patterns = [
-        'Apvlnvn',
-        'vpvcnvn',
-        'vSHlvnp',
-        'SnvTH',
-        'pvvLOR',
-        'pv+PER',
-        'sLvTCHER',
-        'svRRIER',
-        'pvnDElSON',
-        'pvnDElS',
-        'vvpSBURG',
-        'vvpSBERG',
-        'vlnvTHION',
-        'vpRvHAM',
-        'vcpLAND',
-        'vcpLvND',
-        'vcfFORD',
-        'vcnFvRD',
+        "Apvlnvn",
+        "vpvcnvn",
+        "vSHlvnp",
+        "SnvTH",
+        "pvvLOR",
+        "pv+PER",
+        "sLvTCHER",
+        "svRRIER",
+        "pvnDElSON",
+        "pvnDElS",
+        "vvpSBURG",
+        "vvpSBERG",
+        "vlnvTHION",
+        "vpRvHAM",
+        "vcpLAND",
+        "vcpLvND",
+        "vcfFORD",
+        "vcnFvRD",
     ];
     const prefixes = [
-        'SMASH',
-        'BULL',
-        'RAGE',
-        'DEATH',
-        'MURDER',
-        'SKULL',
-        'FIGHT',
-        'BREAK',
-        'WAR',
-        'BATTLE',
-        'GROG',
-        'FEAR',
+        "SMASH",
+        "BULL",
+        "RAGE",
+        "DEATH",
+        "MURDER",
+        "SKULL",
+        "FIGHT",
+        "BREAK",
+        "WAR",
+        "BATTLE",
+        "GROG",
+        "FEAR",
     ];
-    const suffixes = ['FIST', 'SMASH', 'REND', 'BLADE', 'AXE', 'CHOPPER', 'CUTTER', 'KILLER'];
+    const suffixes = ["FIST", "SMASH", "REND", "BLADE", "AXE", "CHOPPER", "CUTTER", "KILLER"];
     for (let i = 0; i < prefixes.length; i++) {
         for (let j = 0; j < suffixes.length; j++) {
             gen.patterns.push(prefixes[i] + suffixes[j]);
@@ -59,43 +54,43 @@ function family() {
     return gen;
 }
 function female() {
-    let gen = new generic_1.default();
+    let gen = new GenericNameGenerator();
     gen.patterns = [
-        'vnvlA',
-        'vnv',
-        'vdvlvN',
-        'vlvnA',
-        'vcnvA',
-        'cvlvNIA',
-        'cvlvNA',
-        'pvdvpa',
-        'vpBvZA',
-        'vp+vsA',
+        "vnvlA",
+        "vnv",
+        "vdvlvN",
+        "vlvnA",
+        "vcnvA",
+        "cvlvNIA",
+        "cvlvNA",
+        "pvdvpa",
+        "vpBvZA",
+        "vp+vsA",
     ];
     return gen;
 }
 function male() {
-    let gen = new generic_1.default();
+    let gen = new GenericNameGenerator();
     gen.patterns = [
-        'vFFlvn',
-        'cvclvn',
-        'vpvlvn',
-        'cvLLvvn',
-        'cvlvpul',
-        'vppvl',
-        'pvspvn',
-        'pv+lvn',
-        'pvlsvp',
-        'pvDRvC',
-        'pvp',
-        'pvpvp',
-        'pvppvs',
-        'pAlpvs',
-        'pAlpvG',
-        'svRM',
-        'svRN',
-        'svRNpvK',
-        'pv+pvK',
+        "vFFlvn",
+        "cvclvn",
+        "vpvlvn",
+        "cvLLvvn",
+        "cvlvpul",
+        "vppvl",
+        "pvspvn",
+        "pv+lvn",
+        "pvlsvp",
+        "pvDRvC",
+        "pvp",
+        "pvpvp",
+        "pvppvs",
+        "pAlpvs",
+        "pAlpvG",
+        "svRM",
+        "svRN",
+        "svRNpvK",
+        "pv+pvK",
     ];
     return gen;
 }

@@ -1,29 +1,23 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.all = void 0;
-const dragonborn_1 = __importDefault(require("./races/dragonborn"));
-const dwarf_1 = __importDefault(require("./races/dwarf"));
-const elf_1 = __importDefault(require("./races/elf"));
-const gnome_1 = __importDefault(require("./races/gnome"));
-const halfelf_1 = __importDefault(require("./races/halfelf"));
-const halfling_1 = __importDefault(require("./races/halfling"));
-const halforc_1 = __importDefault(require("./races/halforc"));
-const human_1 = __importDefault(require("./races/human"));
-const tiefling_1 = __importDefault(require("./races/tiefling"));
-function all() {
+import DragonbornSet from "./races/dragonborn.js";
+import DwarfSet from "./races/dwarf.js";
+import ElfSet from "./races/elf.js";
+import GnomeSet from "./races/gnome.js";
+import HalfElfSet from "./races/halfelf.js";
+import HalflingSet from "./races/halfling.js";
+import HalfOrcSet from "./races/halforc.js";
+import HumanSet from "./races/human.js";
+import TieflingSet from "./races/tiefling.js";
+export function all() {
     return [
-        new dragonborn_1.default(),
-        new dwarf_1.default(),
-        new elf_1.default(),
-        new gnome_1.default(),
-        new halfelf_1.default(),
-        new halfling_1.default(),
-        new halforc_1.default(),
-        new human_1.default(),
-        new tiefling_1.default(),
+        new DragonbornSet(),
+        new DwarfSet(),
+        new ElfSet(),
+        new GnomeSet(),
+        new HalfElfSet(),
+        new HalflingSet(),
+        new HalfOrcSet(),
+        new HumanSet(),
+        new TieflingSet(),
     ];
 }
-exports.all = all;

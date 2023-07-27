@@ -1,11 +1,7 @@
-'use strict';
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const generic_1 = __importDefault(require("../generators/generic"));
-const generatorset_1 = __importDefault(require("../generatorset"));
-class ElfSet extends generatorset_1.default {
+"use strict";
+import GenericNameGenerator from "../generators/generic.js";
+import GeneratorSet from "../generatorset.js";
+export default class ElfSet extends GeneratorSet {
     constructor() {
         super();
         this.family = family();
@@ -13,36 +9,35 @@ class ElfSet extends generatorset_1.default {
         this.male = male();
     }
 }
-exports.default = ElfSet;
 function family() {
-    let gen = new generic_1.default();
-    gen.patterns = ['vlpvlvn'];
+    let gen = new GenericNameGenerator();
+    gen.patterns = ["vlpvlvn"];
     let prefixes = [
-        'WHITE',
-        'GREEN',
-        'BLUE',
-        'WILD',
-        'SUMMER',
-        'WINTER',
-        'WIND',
-        'BEACH',
-        'DAWN',
-        'DUSK',
-        'SKY',
-        'NIGHT',
+        "WHITE",
+        "GREEN",
+        "BLUE",
+        "WILD",
+        "SUMMER",
+        "WINTER",
+        "WIND",
+        "BEACH",
+        "DAWN",
+        "DUSK",
+        "SKY",
+        "NIGHT",
     ];
     let suffixes = [
-        'FLOWER',
-        'WALKER',
-        'SONG',
-        'RUNNER',
-        'CROWN',
-        'BLOSSOM',
-        'BELL',
-        'WATCHER',
-        'GUARD',
-        'STAR',
-        'GROVE',
+        "FLOWER",
+        "WALKER",
+        "SONG",
+        "RUNNER",
+        "CROWN",
+        "BLOSSOM",
+        "BELL",
+        "WATCHER",
+        "GUARD",
+        "STAR",
+        "GROVE",
     ];
     for (let i = 0; i < prefixes.length; i++) {
         for (let j = 0; j < suffixes.length; j++) {
@@ -52,35 +47,35 @@ function family() {
     return gen;
 }
 function female() {
-    let gen = new generic_1.default();
+    let gen = new GenericNameGenerator();
     gen.patterns = [
-        'vlpvlvnA',
-        'pvLvDRIEL',
-        'pvLvTHRIEL',
-        'vlWEN',
-        'vlvnwA',
-        'vlvnwE',
-        'vLLUvn',
-        'vsvLME',
-        'cvlwEN',
-        'vnovMIEL',
-        'vlIxN',
+        "vlpvlvnA",
+        "pvLvDRIEL",
+        "pvLvTHRIEL",
+        "vlWEN",
+        "vlvnwA",
+        "vlvnwE",
+        "vLLUvn",
+        "vsvLME",
+        "cvlwEN",
+        "vnovMIEL",
+        "vlIxN",
     ];
     return gen;
 }
 function male() {
-    let gen = new generic_1.default();
+    let gen = new GenericNameGenerator();
     gen.patterns = [
-        'vlpvlvn',
-        'vnvnvnpv',
-        'pARvTHION',
-        'vlMIEL',
-        'vlMvRION',
-        'vRvnoUR',
-        'vNxlION',
-        'vNDxRIL',
-        'vNDxNE',
-        'vRvNxRE',
+        "vlpvlvn",
+        "vnvnvnpv",
+        "pARvTHION",
+        "vlMIEL",
+        "vlMvRION",
+        "vRvnoUR",
+        "vNxlION",
+        "vNDxRIL",
+        "vNDxNE",
+        "vRvNxRE",
     ];
     return gen;
 }

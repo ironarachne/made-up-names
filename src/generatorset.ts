@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
-import NameGenerator from './generator';
+import NameGenerator from "./generator.js";
 
 export default class GeneratorSet {
   name: string;
-  culture: NameGenerator|null;
-  country: NameGenerator|null;
-  family: NameGenerator|null;
-  female: NameGenerator|null;
-  male: NameGenerator|null;
-  town: NameGenerator|null;
+  culture: NameGenerator | null;
+  country: NameGenerator | null;
+  family: NameGenerator | null;
+  female: NameGenerator | null;
+  male: NameGenerator | null;
+  town: NameGenerator | null;
 
   constructor() {
-    this.name = '';
+    this.name = "";
     this.culture = null;
     this.country = null;
     this.family = null;

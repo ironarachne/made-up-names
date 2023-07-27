@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-import NameGenerator from '../generator';
-import * as Invented from '../invented';
-import * as Words from '@ironarachne/words';
+import * as Words from "@ironarachne/words";
+import NameGenerator from "../generator.js";
+import * as Invented from "../invented.js";
 
 export default class GenericNameGenerator implements NameGenerator {
   name: string;
   patterns: string[];
 
   constructor() {
-    this.name = 'generic';
+    this.name = "generic";
     this.patterns = [];
   }
 

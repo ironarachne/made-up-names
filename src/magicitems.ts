@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
-import * as Invented from './invented';
+import * as Invented from "./invented.js";
 
 export function generate() {
   const patterns = [
-    'cvpv',
-    'vc+vc',
-    'gvcvc',
-    'cvDAR',
-    'cvcDRING',
-    'cApERI',
-    'cvcAcI',
-    'cApERv',
+    "cvpv",
+    "vc+vc",
+    "gvcvc",
+    "cvDAR",
+    "cvcDRING",
+    "cApERI",
+    "cvcAcI",
+    "cApERv",
     "cvs'gARvc",
   ];
 

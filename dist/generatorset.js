@@ -1,8 +1,7 @@
-'use strict';
-Object.defineProperty(exports, "__esModule", { value: true });
-class GeneratorSet {
+"use strict";
+export default class GeneratorSet {
     constructor() {
-        this.name = '';
+        this.name = "";
         this.culture = null;
         this.country = null;
         this.family = null;
@@ -11,4 +10,3 @@ class GeneratorSet {
         this.town = null;
     }
 }
-exports.default = GeneratorSet;

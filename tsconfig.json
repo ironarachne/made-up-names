@@ -1,13 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
     "declaration": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "outDir": "./dist",
     "skipLibCheck": true,
     "strict": true,
-    "strictPropertyInitialization": false,
-    "target": "ES2021"
-  }
+    "target": "es2021",
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["node_modules", "tests", "dist"],
+  "include": ["./src/**/*"]
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-import WordGenerator from "@ironarachne/word-generator";
+import { WordGenerator } from "@ironarachne/word-generator";
 import * as Words from "@ironarachne/words";
 
 export function generate(patterns: string[]): string {

@@ -1,4 +1,4 @@
-import NameGenerator from './generator';
+import NameGenerator from "./generator.js";
 export default class GeneratorSet {
     name: string;
     culture: NameGenerator | null;

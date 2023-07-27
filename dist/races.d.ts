@@ -1,2 +1,2 @@
-import GeneratorSet from "./generatorset";
+import GeneratorSet from "./generatorset.js";
 export declare function all(): GeneratorSet[];

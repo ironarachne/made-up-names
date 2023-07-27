@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-import NameGenerator from '../generator';
-import GenericNameGenerator from '../generators/generic';
-import GeneratorSet from '../generatorset';
+import NameGenerator from "../generator.js";
+import GenericNameGenerator from "../generators/generic.js";
+import GeneratorSet from "../generatorset.js";
 
 export default class ElfSet extends GeneratorSet {
   constructor() {
@@ -16,35 +16,35 @@ export default class ElfSet extends GeneratorSet {
 function family(): NameGenerator {
   let gen = new GenericNameGenerator();
 
-  gen.patterns = ['vlpvlvn'];
+  gen.patterns = ["vlpvlvn"];
 
   let prefixes = [
-    'WHITE',
-    'GREEN',
-    'BLUE',
-    'WILD',
-    'SUMMER',
-    'WINTER',
-    'WIND',
-    'BEACH',
-    'DAWN',
-    'DUSK',
-    'SKY',
-    'NIGHT',
+    "WHITE",
+    "GREEN",
+    "BLUE",
+    "WILD",
+    "SUMMER",
+    "WINTER",
+    "WIND",
+    "BEACH",
+    "DAWN",
+    "DUSK",
+    "SKY",
+    "NIGHT",
   ];
 
   let suffixes = [
-    'FLOWER',
-    'WALKER',
-    'SONG',
-    'RUNNER',
-    'CROWN',
-    'BLOSSOM',
-    'BELL',
-    'WATCHER',
-    'GUARD',
-    'STAR',
-    'GROVE',
+    "FLOWER",
+    "WALKER",
+    "SONG",
+    "RUNNER",
+    "CROWN",
+    "BLOSSOM",
+    "BELL",
+    "WATCHER",
+    "GUARD",
+    "STAR",
+    "GROVE",
   ];
 
   for (let i = 0; i < prefixes.length; i++) {
@@ -60,17 +60,17 @@ function female(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    'vlpvlvnA',
-    'pvLvDRIEL',
-    'pvLvTHRIEL',
-    'vlWEN',
-    'vlvnwA',
-    'vlvnwE',
-    'vLLUvn',
-    'vsvLME',
-    'cvlwEN',
-    'vnovMIEL',
-    'vlIxN',
+    "vlpvlvnA",
+    "pvLvDRIEL",
+    "pvLvTHRIEL",
+    "vlWEN",
+    "vlvnwA",
+    "vlvnwE",
+    "vLLUvn",
+    "vsvLME",
+    "cvlwEN",
+    "vnovMIEL",
+    "vlIxN",
   ];
 
   return gen;
@@ -80,16 +80,16 @@ function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    'vlpvlvn',
-    'vnvnvnpv',
-    'pARvTHION',
-    'vlMIEL',
-    'vlMvRION',
-    'vRvnoUR',
-    'vNxlION',
-    'vNDxRIL',
-    'vNDxNE',
-    'vRvNxRE',
+    "vlpvlvn",
+    "vnvnvnpv",
+    "pARvTHION",
+    "vlMIEL",
+    "vlMvRION",
+    "vRvnoUR",
+    "vNxlION",
+    "vNDxRIL",
+    "vNDxNE",
+    "vRvNxRE",
   ];
 
   return gen;

@@ -1,55 +1,29 @@
-'use strict';
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.generate = void 0;
-const Invented = __importStar(require("./invented"));
-function generate() {
+"use strict";
+import * as Invented from "./invented.js";
+export function generate() {
     const patterns = [
-        'pvn',
-        'pvnvn',
-        'pvnvv',
-        'slvnvn',
-        'lvfv',
-        'lvfvn',
-        'tvtv',
-        'pvtv+n',
-        'pvtv+',
-        'pv+c+v',
-        'tv+c+v',
-        'slv+c+vv',
-        'pvnvlv',
-        'pvnvlvnv',
-        'svnvlvnv',
-        'pv+llvlv',
-        'pvpvpv+n',
-        'slv+c+v+n',
-        'slvc+vn',
-        'slvc+vnv',
-        'slvpvpv',
-        'slvpv+pv',
+        "pvn",
+        "pvnvn",
+        "pvnvv",
+        "slvnvn",
+        "lvfv",
+        "lvfvn",
+        "tvtv",
+        "pvtv+n",
+        "pvtv+",
+        "pv+c+v",
+        "tv+c+v",
+        "slv+c+vv",
+        "pvnvlv",
+        "pvnvlvnv",
+        "svnvlvnv",
+        "pv+llvlv",
+        "pvpvpv+n",
+        "slv+c+v+n",
+        "slvc+vn",
+        "slvc+vnv",
+        "slvpvpv",
+        "slvpv+pv",
     ];
     return Invented.generate(patterns);
 }
-exports.generate = generate;

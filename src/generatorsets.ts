@@ -1,7 +1,7 @@
 "use strict";
 
 import * as RND from "@ironarachne/rng";
-import GeneratorSet from "./generatorset";
+import GeneratorSet from "./generatorset.js";
 
 export function randomGenSet(sets: GeneratorSet[]): GeneratorSet {
   return RND.item(sets);
