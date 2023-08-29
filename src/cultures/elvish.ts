@@ -1,8 +1,8 @@
 "use strict";
 
 import NameGenerator from "../generator.js";
-import GenericNameGenerator from "../generators/generic.js";
-import GeneratorSet from "../generatorset.js";
+import GeneratorSet from "../generator_set.js";
+import GenericNameGenerator from "../generic_name_generator.js";
 
 export default class ElvishSet extends GeneratorSet {
   constructor() {

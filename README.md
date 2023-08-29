@@ -2,7 +2,7 @@
 
 This is a library for generating random fictional names.
 
-## Methods
+## Generator Methods
 
 The following methods are available. Each gives you a single random name of the specified type.
 
@@ -25,12 +25,12 @@ It has the following signature:
 ```typescript
 class GeneratorSet {
   name: string;
-  culture: NameGenerator | null;
-  country: NameGenerator | null;
-  family: NameGenerator | null;
-  female: NameGenerator | null;
-  male: NameGenerator | null;
-  town: NameGenerator | null;
+  culture: NameGenerator;
+  country: NameGenerator;
+  family: NameGenerator;
+  female: NameGenerator;
+  male: NameGenerator;
+  town: NameGenerator;
 }
 ```
 
@@ -41,6 +41,18 @@ as its only argument. The `generate` method will give you an array of random nam
 So, if you had a GeneratorSet `mySet`, you could run `mySet.family.generate(10)` to get 10 random family
 names for that set.
 
+The constructor for the above class creates an "empty" `GenericNameGenerator` for each of the `NameGenerator`
+fields. You can set the `patterns` field on each `GenericNameGenerator` to an array of patterns to set it
+up. For example:
+
+```
+let gen = new GeneratorSet();
+
+gen.family.patterns = ['pvd', 'pv+d'];
+
+let familyNames = gen.family.generate();
+```
+
 You can create your own GeneratorSets, or you can use the following premade ones:
 
 - ElvishSet
@@ -48,7 +60,7 @@ You can create your own GeneratorSets, or you can use the following premade ones
 - GermanicSet ("German-like" names)
 - JapanishSet ("Japanese-like" names)
 
-(`cultureSets` will give you an array of all of the above)
+(`cultureSets()` will give you an array of all of the above)
 
 - DragonbornSet
 - DwarfSet
@@ -63,4 +75,6 @@ You can create your own GeneratorSets, or you can use the following premade ones
 - TieflingSet
 - TrollSet
 
-(`fantasyRaceSets` will give you an array of all of the above)
+(`fantasyRaceSets()` will give you an array of all of the above)
+
+Lastly, `allSets()` will give you an array of all available generator sets.

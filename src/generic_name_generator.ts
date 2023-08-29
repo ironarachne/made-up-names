@@ -1,8 +1,8 @@
 "use strict";
 
 import * as Words from "@ironarachne/words";
-import NameGenerator from "../generator.js";
-import * as Invented from "../invented.js";
+import NameGenerator from "./generator.js";
+import * as Invented from "./invented.js";
 
 export default class GenericNameGenerator implements NameGenerator {
   name: string;

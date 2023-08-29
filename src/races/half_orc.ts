@@ -1,12 +1,13 @@
 "use strict";
 
 import NameGenerator from "../generator.js";
-import GenericNameGenerator from "../generators/generic.js";
-import GeneratorSet from "../generatorset.js";
+import GeneratorSet from "../generator_set.js";
+import GenericNameGenerator from "../generic_name_generator.js";
 
-export default class HalfElfSet extends GeneratorSet {
+export default class HalfOrcSet extends GeneratorSet {
   constructor() {
     super();
+    this.name = "half-orc";
     this.family = family();
     this.female = female();
     this.male = male();
@@ -37,34 +38,22 @@ function family(): NameGenerator {
     "vcnFvRD",
   ];
 
-  let prefixes = [
-    "WHITE",
-    "GREEN",
-    "BLUE",
-    "WILD",
-    "SUMMER",
-    "WINTER",
-    "WIND",
-    "BEACH",
-    "DAWN",
-    "DUSK",
-    "SKY",
-    "NIGHT",
+  const prefixes = [
+    "SMASH",
+    "BULL",
+    "RAGE",
+    "DEATH",
+    "MURDER",
+    "SKULL",
+    "FIGHT",
+    "BREAK",
+    "WAR",
+    "BATTLE",
+    "GROG",
+    "FEAR",
   ];
 
-  let suffixes = [
-    "FLOWER",
-    "WALKER",
-    "SONG",
-    "RUNNER",
-    "CROWN",
-    "BLOSSOM",
-    "BELL",
-    "WATCHER",
-    "GUARD",
-    "STAR",
-    "GROVE",
-  ];
+  const suffixes = ["FIST", "SMASH", "REND", "BLADE", "AXE", "CHOPPER", "CUTTER", "KILLER"];
 
   for (let i = 0; i < prefixes.length; i++) {
     for (let j = 0; j < suffixes.length; j++) {
@@ -78,7 +67,18 @@ function family(): NameGenerator {
 function female(): NameGenerator {
   let gen = new GenericNameGenerator();
 
-  gen.patterns = ["vnvlA", "vnv", "vdvlvN", "vlvnA", "vcnvA", "cvlvNIA", "cvlvNA", "pvSSvpa"];
+  gen.patterns = [
+    "vnvlA",
+    "vnv",
+    "vdvlvN",
+    "vlvnA",
+    "vcnvA",
+    "cvlvNIA",
+    "cvlvNA",
+    "pvc+vpa",
+    "vpBvZA",
+    "vppvsA",
+  ];
 
   return gen;
 }
@@ -91,12 +91,21 @@ function male(): NameGenerator {
     "cvclvn",
     "vpvlvn",
     "cvLLvvn",
-    "cvlvpul",
+    "cvlvpv+l",
     "vppvl",
     "pvspvn",
     "pv+lvn",
     "pvlsvp",
     "pvDRvC",
+    "pvp",
+    "pvpvp",
+    "pvppvs",
+    "pAlpvs",
+    "pAlpvG",
+    "svRM",
+    "svRN",
+    "svRNpvK",
+    "pv+pvK",
   ];
 
   return gen;
