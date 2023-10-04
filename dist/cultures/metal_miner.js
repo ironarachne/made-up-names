@@ -128,7 +128,7 @@ function town() {
     for (let i = 0; i < first.length; i++) {
         for (let j = 0; j < second.length; j++) {
             gen.patterns.push(first[i].toUpperCase() + " " + second[j].toUpperCase());
-            gen.patterns.push(first[i].toUpperCase() + second[i].toUpperCase());
+            gen.patterns.push(first[i].toUpperCase() + second[j].toUpperCase());
         }
     }
     return gen;
