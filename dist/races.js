@@ -1,4 +1,5 @@
-import { cloneDeep } from "lodash";
+import pkg from "lodash";
+const { cloneDeep } = pkg;
 import fantasy from "./cultures/fantasy.js";
 import forest_dweller from "./cultures/forest_dweller.js";
 import gem_tinkerer from "./cultures/gem_tinkerer.js";
