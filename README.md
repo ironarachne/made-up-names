@@ -18,12 +18,12 @@ strings must be patterns (as per the rules here: [Word Generator Cheat Sheet](ht
 
 ## Generator Sets
 
-A GeneratorSet is a class that can generate consistent names for a particular set of patterns.
+A GeneratorSet is an object that can generate consistent names for a particular set of patterns.
 
 It has the following signature:
 
 ```typescript
-class GeneratorSet {
+interface GeneratorSet {
   name: string;
   culture: NameGenerator;
   country: NameGenerator;
@@ -53,28 +53,15 @@ gen.family.patterns = ['pvd', 'pv+d'];
 let familyNames = gen.family.generate();
 ```
 
-You can create your own GeneratorSets, or you can use the following premade ones:
+You can create your own GeneratorSets, or you can use one of the premade ones.
 
-- ElvishSet
-- FantasySet (generic fantasy names)
-- GermanicSet ("German-like" names)
-- JapanishSet ("Japanese-like" names)
+Use the method `getSetByName(name: string, sets: GeneratorSet[])` to fetch a specific name generator set.
 
-(`cultureSets()` will give you an array of all of the above)
+The method `fantasyRaceSets()` will give you an array of fantasy race name generator sets. Note: since I'm
+moving away from names based on race, these are actually derived from culture generator sets behind the
+scenes, but made available this way for folks who prefer the old way of doing things. So, the "goblin" name
+generator set is actually the "mud grubber" culture set, just with a new name.
 
-- DragonbornSet
-- DwarfSet
-- ElfSet
-- GnomeSet
-- GoblinSet
-- HalfElfSet
-- HalflingSet
-- HalfOrcSet
-- HumanSet
-- OrcSet
-- TieflingSet
-- TrollSet
+The method `cultureSets()` will give you an array of culture name generator sets.
 
-(`fantasyRaceSets()` will give you an array of all of the above)
-
-Lastly, `allSets()` will give you an array of all available generator sets.
+The method `allSets()` will give you an array of all available generator sets.

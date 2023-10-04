@@ -1,17 +1,30 @@
-"use strict";
-
 import NameGenerator from "../generator.js";
-import GeneratorSet from "../generator_set.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
-export default class DragonbornSet extends GeneratorSet {
-  constructor() {
-    super();
-    this.name = "dragonborn";
-    this.family = family();
-    this.female = female();
-    this.male = male();
-  }
+export default {
+  name: "scale bearer",
+  country: country(),
+  culture: culture(),
+  family: family(),
+  female: female(),
+  male: male(),
+  town: town(),
+};
+
+function culture(): GenericNameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = ["bml+vk", "lvl+vsI(A,E)(R,N)I", "pml+vsI(A,E)(R,N)", "pml+vsI"];
+
+  return gen;
+}
+
+function country(): GenericNameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = ["pvlvlIA", "lvpvpIA", "vnvlvpA", "vpvlY", "vlxRIA"];
+
+  return gen;
 }
 
 function family(): NameGenerator {
@@ -64,6 +77,40 @@ function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = ["vlKvSIA", "cvLvSAR", "cvlvt", "ovnv+R"];
+
+  return gen;
+}
+
+function town(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  const first = [
+    "CLAW",
+    "FANG",
+    "FIRE",
+    "FLAME",
+    "RAGE",
+    "SCALE",
+    "TALON",
+    "TORCH",
+  ];
+
+  const second = [
+    "CLIFF",
+    "CRAG",
+    "DEEP",
+    "DELVE",
+    "MOUNTAIN",
+    "PEAK",
+    "RIDGE",
+    "ROCK",
+  ];
+
+  for (let i = 0; i < first.length; i++) {
+    for (let j = 0; j < second.length; j++) {
+      gen.patterns.push(first[i] + second[j]);
+    }
+  }
 
   return gen;
 }

@@ -1,10 +1,11 @@
-import NameGenerator from "./generator.js";
-export default interface GeneratorSet {
+import NameGenerator from "../generator.js";
+declare const _default: {
     name: string;
-    culture: NameGenerator;
     country: NameGenerator;
+    culture: NameGenerator;
     family: NameGenerator;
     female: NameGenerator;
     male: NameGenerator;
     town: NameGenerator;
-}
+};
+export default _default;
