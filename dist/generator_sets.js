@@ -1,4 +1,3 @@
-"use strict";
 import * as Cultures from "./cultures.js";
 import * as Races from "./races.js";
 export function all() {

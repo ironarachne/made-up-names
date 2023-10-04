@@ -1,5 +1,3 @@
-"use strict";
-
 import * as Cultures from "./cultures.js";
 import GeneratorSet from "./generator_set.js";
 import * as Races from "./races.js";

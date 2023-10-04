@@ -1,17 +1,30 @@
-"use strict";
-
 import NameGenerator from "../generator.js";
-import GeneratorSet from "../generator_set.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
-export default class GnomeSet extends GeneratorSet {
-  constructor() {
-    super();
-    this.name = "gnome";
-    this.family = family();
-    this.female = female();
-    this.male = male();
-  }
+export default {
+  name: "gem tinkerer",
+  country: country(),
+  culture: culture(),
+  family: family(),
+  female: female(),
+  male: male(),
+  town: town(),
+};
+
+function culture(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = ["pmlMy", "pmlMyN", "w(m,y)e(IE,Y)", "vpvlY"];
+
+  return gen;
+}
+
+function country(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = ["evlvlIA", "lvevk+IA", "vnmlvbA", "vlxRIA"];
+
+  return gen;
 }
 
 function family(): NameGenerator {
@@ -95,6 +108,54 @@ function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = ["Blvocvf", "oOdvp", "pvnlv", "pvnp", "cvlVER", "wvlVER", "pvlwvl", "pvlwv"];
+
+  return gen;
+}
+
+function town(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  const first = [
+    "Black",
+    "White",
+    "Blue",
+    "Grey",
+    "Green",
+    "Purple",
+    "Red",
+    "Yellow",
+    "Bleak",
+    "Dark",
+    "Deep",
+    "Iron",
+    "Copper",
+    "Bronze",
+    "Brass",
+    "Steel",
+  ];
+
+  const second = [
+    "Barrow",
+    "Cliff",
+    "Fall",
+    "Hill",
+    "Hollow",
+    "Mountain",
+    "Peak",
+    "Ridge",
+    "Hold",
+    "Delve",
+    "Rock",
+    "Tower",
+    "Valley",
+  ];
+
+  for (let i = 0; i < first.length; i++) {
+    for (let j = 0; j < second.length; j++) {
+      gen.patterns.push(first[i].toUpperCase() + " " + second[j].toUpperCase());
+      gen.patterns.push(first[i].toUpperCase() + second[i].toUpperCase());
+    }
+  }
 
   return gen;
 }

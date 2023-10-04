@@ -1,17 +1,52 @@
-"use strict";
-
 import NameGenerator from "../generator.js";
-import GeneratorSet from "../generator_set.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
-export default class ElfSet extends GeneratorSet {
-  constructor() {
-    super();
-    this.name = "elf";
-    this.family = family();
-    this.female = female();
-    this.male = male();
-  }
+export default {
+  name: "forest dweller",
+  country: country(),
+  culture: culture(),
+  family: family(),
+  female: female(),
+  male: male(),
+  town: town(),
+};
+
+function culture(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = [
+    "(A,O)l(B,G,K)(I,U)l(O,A,E)n",
+    "(A,E)(M,N)I(M,N)(I,U)(M,N)pv",
+    "(B,G,K)(A,E)Rv(TH,l)ION",
+    "vl(M,N)IEL",
+    "vl(M,N)v(L,R)ION",
+    "vR(I,A)noUR",
+    "vNxlION",
+    "vNDxRIL",
+    "vNDxNE",
+    "(A,I,O)RvNxRE",
+  ];
+
+  return gen;
+}
+
+function country(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = [
+    "(A,O)l(B,G,K)(I,U)l(O,A,E)n",
+    "(A,E)(M,N)I(M,N)(I,U)(M,N)pv",
+    "(B,G,K)(A,E)Rv(TH,l)ION",
+    "vl(M,N)IEL",
+    "vl(M,N)v(L,R)ION",
+    "vR(I,A)noUR",
+    "vNxlION",
+    "vNDxRIL",
+    "vNDxNE",
+    "(A,I,O)RvNxRE",
+  ];
+
+  return gen;
 }
 
 function family(): NameGenerator {
@@ -78,6 +113,25 @@ function female(): NameGenerator {
 }
 
 function male(): NameGenerator {
+  let gen = new GenericNameGenerator();
+
+  gen.patterns = [
+    "vl(D,G,K,B)vlvn",
+    "vnvnvnpv",
+    "pARv(TH,l)I(O,E)N",
+    "vl(M,N)IEL",
+    "vlMvRION",
+    "vRvnoUR",
+    "vNxlION",
+    "vN(D,T)xRIL",
+    "vN(D,T)xNE",
+    "vRvNxRE",
+  ];
+
+  return gen;
+}
+
+function town(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [

@@ -1,22 +1,17 @@
-"use strict";
-
-import GeneratorSet from "../generator_set.js";
+import NameGenerator from "@/generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
-export default class JapanishSet extends GeneratorSet {
-  constructor() {
-    super();
-    this.name = "japanish";
-    this.country = country();
-    this.culture = culture();
-    this.family = family();
-    this.female = female();
-    this.male = male();
-    this.town = town();
-  }
-}
+export default {
+  name: "easterling",
+  country: country(),
+  culture: culture(),
+  family: family(),
+  female: female(),
+  male: male(),
+  town: town(),
+};
 
-function culture(): GenericNameGenerator {
+function culture(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
@@ -29,7 +24,7 @@ function culture(): GenericNameGenerator {
   return gen;
 }
 
-function country(): GenericNameGenerator {
+function country(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = ["(N,M)(A,E)(G,K)(A,E)R(I,A,IA)", "(S,K)(A,E)(G,K)(A,E)(R,T)(I,A,IA)"];
@@ -37,7 +32,7 @@ function country(): GenericNameGenerator {
   return gen;
 }
 
-function family(): GenericNameGenerator {
+function family(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
@@ -51,7 +46,7 @@ function family(): GenericNameGenerator {
   return gen;
 }
 
-function female(): GenericNameGenerator {
+function female(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
@@ -65,7 +60,7 @@ function female(): GenericNameGenerator {
   return gen;
 }
 
-function male(): GenericNameGenerator {
+function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
@@ -78,7 +73,7 @@ function male(): GenericNameGenerator {
   return gen;
 }
 
-function town(): GenericNameGenerator {
+function town(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [

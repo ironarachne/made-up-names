@@ -1,8 +1,8 @@
-import NameGenerator from "@/generator.js";
+import NameGenerator from "../generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
 export default {
-  name: "fantasy",
+  name: "war bringer",
   country: country(),
   culture: culture(),
   family: family(),
@@ -26,7 +26,6 @@ function country(): NameGenerator {
 
   return gen;
 }
-
 function family(): NameGenerator {
   let gen = new GenericNameGenerator();
 
@@ -36,20 +35,43 @@ function family(): NameGenerator {
     "vSHlvnp",
     "SnvTH",
     "pvvLOR",
-    "kyPER",
+    "pv+PER",
     "sLvTCHER",
-    "sv(RR,R)IER",
-    "pvn(D,T)ElS(E,O)N",
+    "svRRIER",
+    "pvnDElSON",
     "pvnDElS",
-    "ypSBURG",
-    "ypSBERG",
+    "vvpSBURG",
+    "vvpSBERG",
     "vlnvTHION",
     "vpRvHAM",
-    "vkLAND",
-    "yfpLmND",
+    "vcpLAND",
+    "vcpLvND",
     "vcfFORD",
-    "vSnFvRD",
+    "vcnFvRD",
   ];
+
+  const prefixes = [
+    "SMASH",
+    "BULL",
+    "RAGE",
+    "DEATH",
+    "MURDER",
+    "SKULL",
+    "FIGHT",
+    "BREAK",
+    "WAR",
+    "BATTLE",
+    "GROG",
+    "FEAR",
+  ];
+
+  const suffixes = ["FIST", "SMASH", "REND", "BLADE", "AXE", "CHOPPER", "CUTTER", "KILLER"];
+
+  for (let i = 0; i < prefixes.length; i++) {
+    for (let j = 0; j < suffixes.length; j++) {
+      gen.patterns.push(prefixes[i] + suffixes[j]);
+    }
+  }
 
   return gen;
 }
@@ -57,7 +79,18 @@ function family(): NameGenerator {
 function female(): NameGenerator {
   let gen = new GenericNameGenerator();
 
-  gen.patterns = ["vnvlA", "ynA", "vbvlyN", "vlvnA", "vcnvA", "pvlvNIA", "tvlvNA", "pvSSvkA"];
+  gen.patterns = [
+    "vnvlA",
+    "vnv",
+    "vdvlvN",
+    "vlvnA",
+    "vcnvA",
+    "cvlvNIA",
+    "cvlvNA",
+    "pvdvpa",
+    "vpBvZA",
+    "vp+vsA",
+  ];
 
   return gen;
 }
@@ -66,17 +99,25 @@ function male(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   gen.patterns = [
-    "jmB",
     "vFFlvn",
-    "evplvn",
-    "vpylvn",
-    "fvLLyn",
-    "fvlvpml",
+    "cvclvn",
+    "vpvlvn",
+    "cvLLvvn",
+    "cvlvpul",
     "vppvl",
-    "pmspvn",
+    "pvspvn",
     "pv+lvn",
     "pvlsvp",
     "pvDRvC",
+    "pvp",
+    "pvpvp",
+    "pvppvs",
+    "pAlpvs",
+    "pAlpvG",
+    "svRM",
+    "svRN",
+    "svRNpvK",
+    "pv+pvK",
   ];
 
   return gen;
@@ -86,24 +127,24 @@ function town(): NameGenerator {
   let gen = new GenericNameGenerator();
 
   const first = [
-    "Two",
-    "Three",
-    "Four",
-    "Five",
-    "Six",
-    "Seven",
-    "Eight",
-    "Nine",
-    "Ten",
-    "Twin",
-    "Triple",
+    "Axe",
     "Black",
-    "White",
+    "Bleak",
+    "Bloody",
     "Blue",
-    "Grey",
+    "Dead",
     "Green",
+    "Grey",
+    "Pike",
     "Purple",
+    "Raw",
     "Red",
+    "Shield",
+    "Sword",
+    "Three",
+    "Twin",
+    "Two",
+    "White",
     "Yellow",
   ];
 
