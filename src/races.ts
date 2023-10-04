@@ -1,3 +1,4 @@
+import { cloneDeep } from "lodash";
 import fantasy from "./cultures/fantasy.js";
 import forest_dweller from "./cultures/forest_dweller.js";
 import gem_tinkerer from "./cultures/gem_tinkerer.js";
@@ -9,40 +10,40 @@ import war_bringer from "./cultures/war_bringer.js";
 import GeneratorSet from "./generator_set.js";
 
 export function all(): GeneratorSet[] {
-  let elf = forest_dweller;
+  let elf = cloneDeep(forest_dweller);
   elf.name = "elf";
 
-  let dwarf = metal_miner;
+  let dwarf = cloneDeep(metal_miner);
   dwarf.name = "dwarf";
 
-  let dragonborn = scale_bearer;
+  let dragonborn = cloneDeep(scale_bearer);
   dragonborn.name = "dragonborn";
 
-  let gnome = gem_tinkerer;
+  let gnome = cloneDeep(gem_tinkerer);
   gnome.name = "gnome";
 
-  let goblin = mud_grubber;
+  let goblin = cloneDeep(mud_grubber);
   goblin.name = "goblin";
 
-  let halfling = hill_feaster;
+  let halfling = cloneDeep(hill_feaster);
   halfling.name = "halfling";
 
-  let half_elf = fantasy;
+  let half_elf = cloneDeep(fantasy);
   half_elf.name = "half-elf";
 
-  let half_orc = fantasy;
+  let half_orc = cloneDeep(fantasy);
   half_orc.name = "half-orc";
 
-  let human = fantasy;
+  let human = cloneDeep(fantasy);
   human.name = "human";
 
-  let orc = war_bringer;
+  let orc = cloneDeep(war_bringer);
   orc.name = "orc";
 
-  let tiefling = fantasy;
+  let tiefling = cloneDeep(fantasy);
   tiefling.name = "tiefling";
 
-  let troll = war_bringer;
+  let troll = cloneDeep(war_bringer);
   troll.name = "troll";
 
   return [
