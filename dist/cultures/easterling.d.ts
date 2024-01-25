@@ -1,4 +1,7 @@
 import NameGenerator from "@/generator.js";
+/**
+ * Easterling names are based loosely on Japanese names.
+ */
 declare const _default: {
     name: string;
     country: NameGenerator;

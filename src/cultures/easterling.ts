@@ -1,6 +1,9 @@
 import NameGenerator from "@/generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
+/**
+ * Easterling names are based loosely on Japanese names.
+ */
 export default {
   name: "easterling",
   country: country(),

@@ -1,4 +1,7 @@
 import NameGenerator from "@/generator.js";
+/**
+ * Old worlder names are based on German names.
+ */
 declare const _default: {
     name: string;
     country: NameGenerator;

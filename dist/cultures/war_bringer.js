@@ -1,4 +1,7 @@
 import GenericNameGenerator from "../generic_name_generator.js";
+/**
+ * War bringer names are based on orc names from D&D.
+ */
 export default {
     name: "war bringer",
     country: country(),

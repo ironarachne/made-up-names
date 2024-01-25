@@ -10,41 +10,46 @@ import scale_bearer from "./cultures/scale_bearer.js";
 import war_bringer from "./cultures/war_bringer.js";
 import GeneratorSet from "./generator_set.js";
 
+/**
+ * Returns a set of name generators using the conventional "race is culture" paradigm from old-school D&D.
+ *
+ * @returns {GeneratorSet[]} Array of name generator sets
+ */
 export function all(): GeneratorSet[] {
-  let elf = cloneDeep(forest_dweller);
+  const elf = cloneDeep(forest_dweller);
   elf.name = "elf";
 
-  let dwarf = cloneDeep(metal_miner);
+  const dwarf = cloneDeep(metal_miner);
   dwarf.name = "dwarf";
 
-  let dragonborn = cloneDeep(scale_bearer);
+  const dragonborn = cloneDeep(scale_bearer);
   dragonborn.name = "dragonborn";
 
-  let gnome = cloneDeep(gem_tinkerer);
+  const gnome = cloneDeep(gem_tinkerer);
   gnome.name = "gnome";
 
-  let goblin = cloneDeep(mud_grubber);
+  const goblin = cloneDeep(mud_grubber);
   goblin.name = "goblin";
 
-  let halfling = cloneDeep(hill_feaster);
+  const halfling = cloneDeep(hill_feaster);
   halfling.name = "halfling";
 
-  let half_elf = cloneDeep(fantasy);
+  const half_elf = cloneDeep(fantasy);
   half_elf.name = "half-elf";
 
-  let half_orc = cloneDeep(fantasy);
+  const half_orc = cloneDeep(fantasy);
   half_orc.name = "half-orc";
 
-  let human = cloneDeep(fantasy);
+  const human = cloneDeep(fantasy);
   human.name = "human";
 
-  let orc = cloneDeep(war_bringer);
+  const orc = cloneDeep(war_bringer);
   orc.name = "orc";
 
-  let tiefling = cloneDeep(fantasy);
+  const tiefling = cloneDeep(fantasy);
   tiefling.name = "tiefling";
 
-  let troll = cloneDeep(war_bringer);
+  const troll = cloneDeep(war_bringer);
   troll.name = "troll";
 
   return [

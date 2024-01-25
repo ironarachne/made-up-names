@@ -1,4 +1,7 @@
 import NameGenerator from "../generator.js";
+/**
+ * Forest dweller names are meant to be similar to wood elf names from D&D.
+ */
 declare const _default: {
     name: string;
     country: NameGenerator;

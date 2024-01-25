@@ -1,3 +1,6 @@
+/**
+ * NameGenerator interface
+ */
 export default interface NameGenerator {
     name: string;
     patterns: string[];

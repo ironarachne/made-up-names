@@ -1,4 +1,7 @@
 import NameGenerator from "../generator.js";
+/**
+ * Gem tinkerer names are based on gnome names from D&D.
+ */
 declare const _default: {
     name: string;
     country: NameGenerator;

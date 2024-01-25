@@ -8,6 +8,12 @@ import mud_grubber from "./cultures/mud_grubber.js";
 import old_worlder from "./cultures/old_worlder.js";
 import scale_bearer from "./cultures/scale_bearer.js";
 import war_bringer from "./cultures/war_bringer.js";
+/**
+ * Returns generator sets for all cultures.
+ *
+ * @returns {GeneratorSet[]} Generator sets for all cultures.
+ * @since 0.0.0
+ */
 export function all() {
     return [
         easterling,

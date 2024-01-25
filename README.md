@@ -65,3 +65,7 @@ generator set is actually the "mud grubber" culture set, just with a new name.
 The method `cultureSets()` will give you an array of culture name generator sets.
 
 The method `allSets()` will give you an array of all available generator sets.
+
+# Further Documentation
+
+See [here](https://ironarachne.github.io/made-up-names).

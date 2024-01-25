@@ -1,6 +1,9 @@
 import NameGenerator from "../generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
+/**
+ * Gem tinkerer names are based on gnome names from D&D.
+ */
 export default {
   name: "gem tinkerer",
   country: country(),

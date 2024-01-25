@@ -10,6 +10,12 @@ import scale_bearer from "./cultures/scale_bearer.js";
 import war_bringer from "./cultures/war_bringer.js";
 import GeneratorSet from "./generator_set.js";
 
+/**
+ * Returns generator sets for all cultures.
+ *
+ * @returns {GeneratorSet[]} Generator sets for all cultures.
+ * @since 0.0.0
+ */
 export function all(): GeneratorSet[] {
   return [
     easterling,

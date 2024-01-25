@@ -1,6 +1,9 @@
 import NameGenerator from "../generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
+/**
+ * Metal miner names are based on dwarf names from D&D.
+ */
 export default {
   name: "metal miner",
   country: country(),

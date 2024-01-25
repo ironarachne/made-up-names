@@ -1,6 +1,9 @@
 import NameGenerator from "../generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
+/**
+ * Mud grubber names are based on goblin names from D&D.
+ */
 export default {
   name: "mud grubber",
   country: country(),

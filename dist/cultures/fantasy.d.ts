@@ -1,4 +1,7 @@
 import NameGenerator from "@/generator.js";
+/**
+ * Fantasy names are generic Western fantasy names.
+ */
 declare const _default: {
     name: string;
     country: NameGenerator;

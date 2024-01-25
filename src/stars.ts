@@ -1,7 +1,11 @@
-"use strict";
-
 import * as Invented from "./invented.js";
 
+/**
+ * Generates a star name.
+ *
+ * @returns {string} The name.
+ * @since 0.0.0
+ */
 export function generate() {
   const patterns = [
     "pvn",

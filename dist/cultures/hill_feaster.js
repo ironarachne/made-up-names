@@ -1,4 +1,7 @@
 import GenericNameGenerator from "../generic_name_generator.js";
+/**
+ * Hill feaster names are based on halfling names from D&D.
+ */
 export default {
     name: "hill feaster",
     country: country(),

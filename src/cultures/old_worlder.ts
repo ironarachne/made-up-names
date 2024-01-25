@@ -1,6 +1,9 @@
 import NameGenerator from "@/generator.js";
 import GenericNameGenerator from "../generic_name_generator.js";
 
+/**
+ * Old worlder names are based on German names.
+ */
 export default {
   name: "old worlder",
   country: country(),
