@@ -1,6 +1,4 @@
-import * as RND from "@ironarachne/rng";
-
-import random from "random";
+import * as RNG from "@ironarachne/rng";
 
 /**
  * Generates a tavern name.
@@ -8,68 +6,83 @@ import random from "random";
  * @returns {string} The name.
  * @since 0.0.0
  */
-export function generate(): string {
+export function generate(seed: number = Date.now()): string {
+  const random = new RNG.RNG(seed);
   let name = "The ";
 
   const adjectiveChance = random.int(0, 100);
 
   if (adjectiveChance > 60) {
-    name += `${RND.item(adjectives())} `;
+    name += `${random.item(adjectives())} `;
   }
 
-  name += RND.item(nouns());
+  name += random.item(nouns());
 
   return name;
 }
 
 function adjectives() {
   return [
-    "Blue",
-    "Red",
-    "Green",
-    "White",
     "Black",
-    "Gold",
-    "Ivory",
-    "Steel",
-    "Iron",
-    "Old",
-    "Little",
-    "Fat",
-    "Laughing",
-    "Growling",
+    "Blue",
     "Chortling",
     "Dancing",
+    "Drunken",
+    "Fat",
+    "Flying",
+    "Gold",
+    "Golden",
+    "Green",
+    "Growling",
+    "Iron",
+    "Ivory",
+    "Laughing",
+    "Little",
+    "Old",
+    "Red",
+    "Steel",
+    "White",
   ];
 }
 
 function nouns() {
   return [
-    "Dolphyn",
-    "Griffin",
-    "Dragon",
-    "Wyvern",
-    "Wolf",
-    "Boar",
-    "Pannier",
-    "King's Head",
-    "Pot",
-    "Horse's Head",
-    "Ram's Head",
-    "Crane",
-    "Cony",
     "Ball",
     "Basket",
+    "Boar",
+    "Cat",
+    "Cony",
+    "Crane",
     "Cross",
+    "Crown",
     "Cup",
+    "Dolphyn",
+    "Dragon",
     "Garland",
     "Gate",
+    "Griffin",
     "Hammer",
+    "Horse's Head",
+    "King's Head",
+    "Knave",
     "Lattice",
-    "Rose",
-    "Ship",
+    "Lion",
+    "Lout",
+    "Maiden",
     "Mare",
-    "Sheep",
+    "Moon",
+    "Oak",
+    "Ox",
+    "Pannier",
     "Pig",
+    "Pony",
+    "Pot",
+    "Ram's Head",
+    "Rose",
+    "Sheep",
+    "Ship",
+    "Steed",
+    "Wolf",
+    "Wyvern",
   ];
 }

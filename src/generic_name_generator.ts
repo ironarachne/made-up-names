@@ -18,21 +18,17 @@ import * as Invented from "./invented.js";
 export default class GenericNameGenerator implements NameGenerator {
   name: string;
   patterns: string[];
+  seed: number;
 
-  constructor() {
+  constructor(seed: number = Date.now()) {
     this.name = "generic";
     this.patterns = [];
+    this.seed = seed;
   }
 
   generate(numberOfNames: number): string[] {
-    const names = [];
+    const names = Invented.generate(this.patterns, this.seed, numberOfNames);
 
-    for (let i = 0; i < numberOfNames; i++) {
-      let name = Invented.generate(this.patterns);
-      name = Words.title(name);
-      names.push(name);
-    }
-
-    return names;
+    return names.map(Words.title);
   }
 }

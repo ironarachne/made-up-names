@@ -6,8 +6,8 @@ import GenericNameGenerator from "./generic_name_generator.js";
  * @since 0.0.0
  */
 export default class StarNationNameGenerator extends GenericNameGenerator {
-  constructor() {
-    super();
+  constructor(seed: number = Date.now()) {
+    super(seed);
     this.patterns = [
       "pvn",
       "pvnvn",

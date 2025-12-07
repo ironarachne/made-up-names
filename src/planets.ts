@@ -1,7 +1,5 @@
-import * as RND from "@ironarachne/rng";
+import * as RNG from "@ironarachne/rng";
 import * as Invented from "./invented.js";
-
-import random from "random";
 
 /**
  * Generates a planet name.
@@ -9,7 +7,8 @@ import random from "random";
  * @returns {string} The name.
  * @since 0.0.0
  */
-export function generate(): string {
+export function generate(seed: number = Date.now()): string {
+  const random = new RNG.RNG(seed);
   const patterns = [
     "avnvs",
     "svavvn",
@@ -29,12 +28,12 @@ export function generate(): string {
     "pvpOOINE",
   ];
 
-  let name = Invented.generate(patterns);
+  let name = Invented.generate(patterns, seed)[0];
 
   const chanceOfOrdinalSuffix = random.int(1, 100);
 
   if (chanceOfOrdinalSuffix > 85) {
-    const number = RND.item(["Prime", "II", "Secondus", "III", "IV", "V", "VI", "VII"]);
+    const number = random.item(["Prime", "II", "Secondus", "III", "IV", "V", "VI", "VII"]);
 
     name += ` ${number}`;
   }
