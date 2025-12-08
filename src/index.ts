@@ -1,16 +1,16 @@
 import { RNG } from "@ironarachne/rng";
 import { WordGenerator } from "@ironarachne/word-generator";
 import * as Words from "@ironarachne/words";
-import easterling from "./cultures/easterling.json";
-import fantasy from "./cultures/fantasy.json";
-import forestDweller from "./cultures/forest_dweller.json";
-import gemTinkerer from "./cultures/gem_tinkerer.json";
-import hillFeaster from "./cultures/hill_feaster.json";
-import metalMiner from "./cultures/metal_miner.json";
-import mudGrubber from "./cultures/mud_grubber.json";
-import oldWorlder from "./cultures/old_worlder.json";
-import scaleBearer from "./cultures/scale_bearer.json";
-import warBringer from "./cultures/war_bringer.json";
+import easterling from "./cultures/easterling.json" with { type: "json" };
+import fantasy from "./cultures/fantasy.json" with { type: "json" };
+import forestDweller from "./cultures/forest_dweller.json" with { type: "json" };
+import gemTinkerer from "./cultures/gem_tinkerer.json" with { type: "json" };
+import hillFeaster from "./cultures/hill_feaster.json" with { type: "json" };
+import metalMiner from "./cultures/metal_miner.json" with { type: "json" };
+import mudGrubber from "./cultures/mud_grubber.json" with { type: "json" };
+import oldWorlder from "./cultures/old_worlder.json" with { type: "json" };
+import scaleBearer from "./cultures/scale_bearer.json" with { type: "json" };
+import warBringer from "./cultures/war_bringer.json" with { type: "json" };
 
 /**
  * A name generator.
