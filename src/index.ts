@@ -1,16 +1,16 @@
 import { RNG } from "@ironarachne/rng";
 import { WordGenerator } from "@ironarachne/word-generator";
 import * as Words from "@ironarachne/words";
-import easterling from "@/cultures/easterling.json";
-import fantasy from "@/cultures/fantasy.json";
-import forestDweller from "@/cultures/forest_dweller.json";
-import gemTinkerer from "@/cultures/gem_tinkerer.json";
-import hillFeaster from "@/cultures/hill_feaster.json";
-import metalMiner from "@/cultures/metal_miner.json";
-import mudGrubber from "@/cultures/mud_grubber.json";
-import oldWorlder from "@/cultures/old_worlder.json";
-import scaleBearer from "@/cultures/scale_bearer.json";
-import warBringer from "@/cultures/war_bringer.json";
+import easterling from "./cultures/easterling.json";
+import fantasy from "./cultures/fantasy.json";
+import forestDweller from "./cultures/forest_dweller.json";
+import gemTinkerer from "./cultures/gem_tinkerer.json";
+import hillFeaster from "./cultures/hill_feaster.json";
+import metalMiner from "./cultures/metal_miner.json";
+import mudGrubber from "./cultures/mud_grubber.json";
+import oldWorlder from "./cultures/old_worlder.json";
+import scaleBearer from "./cultures/scale_bearer.json";
+import warBringer from "./cultures/war_bringer.json";
 
 /**
  * A name generator.
