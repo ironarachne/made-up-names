@@ -1,71 +1,139 @@
 # Made Up Names
 
-This is a library for generating random fictional names.
+This is a library for generating random fictional names. It provides generators for various categories like magic items, planets, stars, and cultural names (fantasy races, etc.).
 
-## Generator Methods
+## Installation
 
-The following methods are available. Each gives you a single random name of the specified type.
+```bash
+npm install @ironarachne/made-up-names
+```
 
-- magicItem
-- modelNumber
-- planet
-- star
-- tavern
+## Usage
 
-In addition, there is a special method `invent` which takes an array of strings as its argument. These
-strings must be patterns (as per the rules here: [Word Generator Cheat Sheet](https://www.ironarachne.com/#/word-generator-cheat-sheet)). The
-`invent` method will give you a random name that adheres to a random one of those patterns.
+### Basic Generators
 
-## Generator Sets
-
-A GeneratorSet is an object that can generate consistent names for a particular set of patterns.
-
-It has the following signature:
+The library provides several standalone generators. Each generator returns a `NameGenerator` object which has a `generate(count)` method.
 
 ```typescript
-interface GeneratorSet {
+import { 
+  getMagicItemNameGenerator, 
+  getModelNumberNameGenerator, 
+  getPlanetNameGenerator, 
+  getStarNameGenerator, 
+  getStarNationNameGenerator 
+} from "@ironarachne/made-up-names";
+
+// Generate 5 magic item names
+const magicItems = getMagicItemNameGenerator().generate(5);
+console.log(magicItems);
+
+// Generate 1 planet name
+const planet = getPlanetNameGenerator().generate(1);
+console.log(planet);
+
+// Other available generators:
+// getModelNumberNameGenerator()
+// getStarNameGenerator()
+// getStarNationNameGenerator()
+```
+
+### Cultural Name Generators
+
+You can generate names based on specific cultures or classic fantasy races. These functions return a `NameGeneratorPatternSet` which contains `NameGenerator`s for different categories (male, female, family, town, etc.).
+
+#### By Culture
+
+```typescript
+import { getCultureNamePatternSet } from "@ironarachne/made-up-names";
+
+const fantasyCulture = getCultureNamePatternSet("fantasy");
+
+// Generate 10 male names from the fantasy culture
+const maleNames = fantasyCulture.male.generate(10);
+
+// Generate 5 town names
+const townNames = fantasyCulture.town.generate(5);
+```
+
+**Available Cultures:**
+- `easterling`
+- `fantasy`
+- `forest dweller`
+- `gem tinkerer`
+- `hill feaster`
+- `metal miner`
+- `mud grubber`
+- `old worlder`
+- `scale bearer`
+- `war bringer`
+
+#### By Classic Race
+
+For convenience, you can also access these patterns using classic fantasy race names.
+
+```typescript
+import { getClassicRaceNamePatternSet } from "@ironarachne/made-up-names";
+
+const elfNames = getClassicRaceNamePatternSet("elf");
+
+// Generate 3 female elf names
+const femaleElfNames = elfNames.female.generate(3);
+```
+
+**Available Races:**
+- `dragonborn` (maps to `scale bearer`)
+- `dwarf` (maps to `metal miner`)
+- `elf` (maps to `forest dweller`)
+- `gnome` (maps to `gem tinkerer`)
+- `goblin` (maps to `mud grubber`)
+- `half-elf` (maps to `fantasy`)
+- `half-orc` (maps to `fantasy`)
+- `halfling` (maps to `hill feaster`)
+- `human` (maps to `old worlder`)
+- `orc` (maps to `war bringer`)
+- `tiefling` (maps to `fantasy`)
+- `troll` (maps to `war bringer`)
+
+### Custom Generators
+
+You can create your own name generator using `getNameGeneratorForPatternSet`.
+
+```typescript
+import { getNameGeneratorForPatternSet } from "@ironarachne/made-up-names";
+
+const myPatterns = {
+  patterns: ["cvcv", "vcvc"], // See @ironarachne/word-generator for pattern syntax
+};
+
+const myGenerator = getNameGeneratorForPatternSet("my_custom_gen", myPatterns);
+const names = myGenerator.generate(5);
+```
+
+## Types
+
+### NameGenerator
+
+```typescript
+type NameGenerator = {
   name: string;
-  culture: NameGenerator;
-  country: NameGenerator;
-  family: NameGenerator;
-  female: NameGenerator;
-  male: NameGenerator;
-  town: NameGenerator;
-}
+  generate: (numberOfNames: number) => string[];
+};
 ```
 
-In the above, "name" is the name of the generator set. The other properties are all `NameGenerator`s.
-Each `NameGenerator` has a `name`, a set of `patterns`, and a `generate` method that takes a number
-as its only argument. The `generate` method will give you an array of random names, sized to that number.
+### NameGeneratorPatternSet
 
-So, if you had a GeneratorSet `mySet`, you could run `mySet.family.generate(10)` to get 10 random family
-names for that set.
-
-The constructor for the above class creates an "empty" `GenericNameGenerator` for each of the `NameGenerator`
-fields. You can set the `patterns` field on each `GenericNameGenerator` to an array of patterns to set it
-up. For example:
-
-```
-let gen = new GeneratorSet();
-
-gen.family.patterns = ['pvd', 'pv+d'];
-
-let familyNames = gen.family.generate();
+```typescript
+type NameGeneratorPatternSet = {
+  name: string;
+  culture: string[] | PatternSet;
+  country: string[] | PatternSet;
+  family: string[] | PatternSet;
+  female: string[] | PatternSet;
+  male: string[] | PatternSet;
+  town: string[] | PatternSet;
+};
 ```
 
-You can create your own GeneratorSets, or you can use one of the premade ones.
+## Documentation
 
-Use the method `getSetByName(name: string, sets: GeneratorSet[])` to fetch a specific name generator set.
-
-The method `fantasyRaceSets()` will give you an array of fantasy race name generator sets. Note: since I'm
-moving away from names based on race, these are actually derived from culture generator sets behind the
-scenes, but made available this way for folks who prefer the old way of doing things. So, the "goblin" name
-generator set is actually the "mud grubber" culture set, just with a new name.
-
-The method `cultureSets()` will give you an array of culture name generator sets.
-
-The method `allSets()` will give you an array of all available generator sets.
-
-# Further Documentation
-
-See [here](https://ironarachne.github.io/made-up-names).
+For more detailed documentation, see the generated docs in the `docs/` directory or run `npm run docs`.

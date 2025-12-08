@@ -159,6 +159,12 @@ export declare function getPlanetNameGenerator(rng?: RNG): NameGenerator;
  */
 export declare function getClassicRaceNamePatternSet(name: string): NameGeneratorPatternSet;
 /**
+ * Gets the list of supported classic race name pattern sets.
+ *
+ * @returns The list of supported classic race name pattern sets.
+ */
+export declare function getSupportedClassicRaceNamePatternSets(): string[];
+/**
  * Gets a name generator for stars.
  *
  * @param rng - The random number generator to use.

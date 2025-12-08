@@ -232,6 +232,27 @@ export function getClassicRaceNamePatternSet(name) {
     }
 }
 /**
+ * Gets the list of supported classic race name pattern sets.
+ *
+ * @returns The list of supported classic race name pattern sets.
+ */
+export function getSupportedClassicRaceNamePatternSets() {
+    return [
+        "dragonborn",
+        "dwarf",
+        "elf",
+        "gnome",
+        "goblin",
+        "half-elf",
+        "half-orc",
+        "halfling",
+        "human",
+        "orc",
+        "tiefling",
+        "troll",
+    ];
+}
+/**
  * Gets a name generator for stars.
  *
  * @param rng - The random number generator to use.
