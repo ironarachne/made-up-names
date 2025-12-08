@@ -1,0 +1,68 @@
+{
+    "name": "old worlder",
+    "culture": [
+        "kmlMyNmN",
+        "kmlMyNm",
+        "kmTHmk"
+    ],
+    "country": [
+        "pmkLAND",
+        "lyMvNIEN",
+        "evtLAND",
+        "pvtmNIEN",
+        "eynMARK"
+    ],
+    "family": [
+        "ivRSoMANN",
+        "SCHnveZLmR",
+        "SCHnve",
+        "wvnZFRyD",
+        "kmnvG",
+        "kmnvR",
+        "kmnIG",
+        "wmnFRyD"
+    ],
+    "female": [
+        "avNNIiER",
+        "sAnoRA",
+        "sARA",
+        "smlInA",
+        "imlEN",
+        "imlENA",
+        "yLnA",
+        "bAlIA",
+        "hAlIA",
+        "wILnA",
+        "NAbIA",
+        "NmbIA",
+        "kARmlINE",
+        "vLmNORA"
+    ],
+    "male": [
+        "Mvlk",
+        "vRNmn",
+        "MmTHIAS",
+        "NmkO",
+        "kOnRAD",
+        "kmnR",
+        "oInO",
+        "lUoA",
+        "LvRs",
+        "MvGnUs",
+        "Nvo"
+    ],
+    "town": [
+        "vpENBERG",
+        "vpmnBERG",
+        "vpnSBERG",
+        "kvnBERG",
+        "pmRpENHEIM",
+        "pmRpHEIM",
+        "imnENFELD",
+        "imRSFELD",
+        "vpENBURG",
+        "vpmnBURG",
+        "vpnSBURG",
+        "kvnBURG"
+    ]
+}

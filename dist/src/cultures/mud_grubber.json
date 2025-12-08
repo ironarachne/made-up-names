@@ -1,0 +1,135 @@
+{
+    "name": "mud grubber",
+    "culture": [
+        "pmlMyNmN",
+        "kmlMyNm",
+        "kyTHmkI",
+        "pOhRAkI"
+    ],
+    "country": [
+        "pvlvlIA",
+        "lvpvpIA",
+        "vnvlvpA",
+        "vpvlY",
+        "flvnv",
+        "vfpvlION",
+        "vlxRIA"
+    ],
+    "family": {
+        "patterns": [
+            "BvdvnS",
+            "pvMpu"
+        ],
+        "combinations": [
+            [
+                [
+                    "BIG",
+                    "CRAZE",
+                    "FEATHER",
+                    "FLEA",
+                    "GREASE",
+                    "HAIRY",
+                    "HOG",
+                    "HORN",
+                    "LITTLE",
+                    "LONG",
+                    "MUD",
+                    "OLD",
+                    "PROUD",
+                    "PUDDI",
+                    "SLIME",
+                    "SLUDGE",
+                    "SMALL",
+                    "STINK",
+                    "SWIFT",
+                    "UGLY",
+                    "UNDER",
+                    "WANDER",
+                    "WART",
+                    "WHIT",
+                    "OIL",
+                    "PUDDING"
+                ],
+                [
+                    "BELLY",
+                    "BOTTOM",
+                    "BUCKET",
+                    "DALE",
+                    "FACE",
+                    "FOOT",
+                    "HOUSE",
+                    "NOSE",
+                    "STENCH",
+                    "TOOTH",
+                    "WART"
+                ]
+            ]
+        ]
+    },
+    "female": [
+        "oEOnY",
+        "oEARL",
+        "pELInDA",
+        "mvlvnoA",
+        "plvSovn",
+        "Mvovlpvlo",
+        "pvfvnA"
+    ],
+    "male": [
+        "BvlBvK",
+        "svnwvsENK",
+        "pvPPvnK",
+        "pvlvplvS",
+        "wvnflvo",
+        "pvlnO",
+        "vovlpvRT"
+    ],
+    "town": {
+        "patterns": [],
+        "combinations": [
+            [
+                [
+                    "TWO",
+                    "THREE",
+                    "FOUR",
+                    "FIVE",
+                    "SIX",
+                    "SEVEN",
+                    "EIGHT",
+                    "NINE",
+                    "TEN",
+                    "TWIN",
+                    "TRIPLE",
+                    "BLACK",
+                    "WHITE",
+                    "BLUE",
+                    "GREY",
+                    "GREEN",
+                    "PURPLE",
+                    "RED",
+                    "YELLOW"
+                ],
+                [
+                    " "
+                ],
+                [
+                    "BARROWS",
+                    "CLIFFS",
+                    "FALLS",
+                    "HILLS",
+                    "HOLLOWS",
+                    "MOUNTAINS",
+                    "PEAKS",
+                    "RIDGES",
+                    "RIVERS",
+                    "ROCKS",
+                    "STREAMS",
+                    "TOWERS",
+                    "TREES",
+                    "VALLEYS",
+                    "WATERS"
+                ]
+            ]
+        ]
+    }
+}

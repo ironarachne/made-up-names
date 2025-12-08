@@ -1,0 +1,125 @@
+{
+    "name": "metal miner",
+    "culture": [
+        "pmlMyNmN",
+        "kmlMyNm",
+        "kyTHmkI",
+        "pOhRAkI"
+    ],
+    "country": [
+        "evlvlIA",
+        "lvevk+IA",
+        "vnmlvbA",
+        "vlxRIA"
+    ],
+    "family": {
+        "patterns": [],
+        "combinations": [
+            [
+                [
+                    "BATTLE",
+                    "BROAD",
+                    "COPPER",
+                    "FIRE",
+                    "GEM",
+                    "GOLD",
+                    "INGOT",
+                    "JADE",
+                    "JET",
+                    "JEWEL",
+                    "ONYX",
+                    "OPAL",
+                    "RUBY",
+                    "SAPPHIRE",
+                    "SILVER",
+                    "STEEL",
+                    "OAK",
+                    "ROCK",
+                    "STONE"
+                ],
+                [
+                    "BANE",
+                    "BEARD",
+                    "BREWER",
+                    "CHIN",
+                    "FALL",
+                    "FOOT",
+                    "GRIP",
+                    "HAMMER",
+                    "HILL",
+                    "MOUNTAIN",
+                    "RIVER",
+                    "TUNNEL"
+                ]
+            ]
+        ]
+    },
+    "female": [
+        "pvRINv",
+        "pWvlINA",
+        "pvlInv",
+        "THvlIn",
+        "pvMLInA",
+        "pvNLInA",
+        "pvFURA",
+        "pvFvlA",
+        "slvlINA"
+    ],
+    "male": [
+        "pvRIN",
+        "pWvlIN",
+        "pvlIN",
+        "THvlIN",
+        "THvlIM",
+        "pvMLI",
+        "pvNLI",
+        "plxIN",
+        "pvFUR",
+        "pvFvl",
+        "slvlIN"
+    ],
+    "town": {
+        "patterns": [],
+        "combinations": [
+            [
+                [
+                    "BLACK",
+                    "BLEAK",
+                    "BLUE",
+                    "BRASS",
+                    "BRONZE",
+                    "COPPER",
+                    "DARK",
+                    "DEEP",
+                    "GREEN",
+                    "GREY",
+                    "IRON",
+                    "PURPLE",
+                    "RED",
+                    "STEEL",
+                    "WHITE",
+                    "YELLOW"
+                ],
+                [
+                    "",
+                    " "
+                ],
+                [
+                    "BARROW",
+                    "CLIFF",
+                    "DELVE",
+                    "FALL",
+                    "HILL",
+                    "HOLD",
+                    "HOLLOW",
+                    "MOUNTAIN",
+                    "PEAK",
+                    "RIDGE",
+                    "ROCK",
+                    "TOWER",
+                    "VALLEY"
+                ]
+            ]
+        ]
+    }
+}

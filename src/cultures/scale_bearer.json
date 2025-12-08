@@ -1,0 +1,101 @@
+{
+  "name": "scale bearer",
+  "culture": [
+    "bml+vk",
+    "lvl+vsI(A,E)(R,N)I",
+    "pml+vsI(A,E)(R,N)",
+    "pml+vsI"
+  ],
+  "country": [
+    "pvlvlIA",
+    "lvpvpIA",
+    "vnvlvpA",
+    "vpvlY",
+    "vlxRIA"
+  ],
+  "family": {
+    "patterns": [
+      "vlpvlvn",
+      "ovlMvRvV",
+      "pvRRcYlION",
+      "pvRRcYlIvN",
+      "pvdcYlIvN",
+      "cvRvXIUS"
+    ],
+    "combinations": [
+      [
+        [
+          "WHITE",
+          "GREEN",
+          "BLUE",
+          "WILD",
+          "SUMMER",
+          "WINTER",
+          "WIND",
+          "DAWN",
+          "DUSK",
+          "SKY",
+          "NIGHT",
+          "FIRE",
+          "FLAME",
+          "RAGE",
+          "HAMMER",
+          "RED",
+          "DARK",
+          "SPELL",
+          "WAR"
+        ],
+        [
+          "BLADE",
+          "BROW",
+          "SCALE",
+          "SPEAR",
+          "RIDER",
+          "WALKER",
+          "RUNNER",
+          "TALON"
+        ]
+      ]
+    ]
+  },
+  "female": [
+    "tvMvt",
+    "cv+l",
+    "cvlv",
+    "ovRRv",
+    "lAIvNN"
+  ],
+  "male": [
+    "vlKvSIA",
+    "cvLvSAR",
+    "cvlvt",
+    "ovnv+R"
+  ],
+  "town": {
+    "patterns": [],
+    "combinations": [
+      [
+        [
+          "CLAW",
+          "FANG",
+          "FIRE",
+          "FLAME",
+          "RAGE",
+          "SCALE",
+          "TALON",
+          "TORCH"
+        ],
+        [
+          "CLIFF",
+          "CRAG",
+          "DEEP",
+          "DELVE",
+          "MOUNTAIN",
+          "PEAK",
+          "RIDGE",
+          "ROCK"
+        ]
+      ]
+    ]
+  }
+}

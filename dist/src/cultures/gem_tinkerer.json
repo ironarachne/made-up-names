@@ -1,0 +1,136 @@
+{
+    "name": "gem tinkerer",
+    "culture": [
+        "pmlMy",
+        "pmlMyN",
+        "w(m,y)e(IE,Y)",
+        "vpvlY"
+    ],
+    "country": [
+        "evlvlIA",
+        "lvevk+IA",
+        "vnmlvbA",
+        "vlxRIA"
+    ],
+    "family": {
+        "patterns": [
+            "vPSpvMS",
+            "cvnKLER",
+            "cvdLER",
+            "cvdER",
+            "pvpLOp"
+        ],
+        "combinations": [
+            [
+                [
+                    "AGATE",
+                    "ALLOY",
+                    "COPPER",
+                    "CRYSTAL",
+                    "DIAMOND",
+                    "DUST",
+                    "GEM",
+                    "GOLD",
+                    "IRON",
+                    "JADE",
+                    "JET",
+                    "JEWEL",
+                    "ONYX",
+                    "OPAL",
+                    "PELLET",
+                    "RUBY",
+                    "SAPPHIRE",
+                    "SILVER",
+                    "WIRE"
+                ],
+                [
+                    "BITER",
+                    "BOPPER",
+                    "BRANDER",
+                    "CHARMER",
+                    "CHEST",
+                    "DROPPER",
+                    "HAMMER",
+                    "MALLET",
+                    "POPPER",
+                    "SEEDER",
+                    "SENDER",
+                    "SHAPER",
+                    "SWEEPER",
+                    "TINKER",
+                    "TRADER",
+                    "WATCHER",
+                    "WEAVER",
+                    "WINKER",
+                    "WOOSHER",
+                    "WORKER"
+                ]
+            ]
+        ]
+    },
+    "female": [
+        "avNNA",
+        "SHvNvDDI",
+        "MvoLI",
+        "voAnA",
+        "voAnI",
+        "vvTHNE",
+        "ovpv",
+        "SNvflvnv",
+        "pvdvnv"
+    ],
+    "male": [
+        "Blvocvf",
+        "oOdvp",
+        "pvnlv",
+        "pvnp",
+        "cvlVER",
+        "wvlVER",
+        "pvlwvl",
+        "pvlwv"
+    ],
+    "town": {
+        "patterns": [],
+        "combinations": [
+            [
+                [
+                    "BLACK",
+                    "BLEAK",
+                    "BLUE",
+                    "BRASS",
+                    "BRONZE",
+                    "COPPER",
+                    "DARK",
+                    "DEEP",
+                    "GREEN",
+                    "GREY",
+                    "IRON",
+                    "PURPLE",
+                    "RED",
+                    "STEEL",
+                    "WHITE",
+                    "YELLOW"
+                ],
+                [
+                    "",
+                    " "
+                ],
+                [
+                    "BARROW",
+                    "CLIFF",
+                    "DELVE",
+                    "FALL",
+                    "HILL",
+                    "HOLD",
+                    "HOLLOW",
+                    "MOUNTAIN",
+                    "PEAK",
+                    "RIDGE",
+                    "ROCK",
+                    "TOWER",
+                    "VALLEY"
+                ]
+            ]
+        ]
+    }
+}

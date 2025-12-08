@@ -1,58 +1,105 @@
-import { describe, expect, test } from "@jest/globals";
-import * as Taverns from "../src/taverns";
-import * as Planets from "../src/planets";
-import * as MagicItems from "../src/magic_items";
-import * as Invented from "../src/invented";
-// Deterministic seed for repeatable tests
-const SEED = 12345;
-describe("Tavern name generator", () => {
-    test("generates a tavern name with a seed", () => {
-        const name = Taverns.generate(SEED);
-        expect(typeof name).toBe("string");
-        expect(name.length).toBeGreaterThan(0);
+import { getCultureNamePatternSet, getClassicRaceNamePatternSet, getMagicItemNameGenerator, getModelNumberNameGenerator, getPlanetNameGenerator, getStarNameGenerator, getStarNationNameGenerator, getNameGeneratorForPatternSet, BaseNameGenerator, } from "@/index";
+import { describe, test, expect } from "vitest";
+describe("Culture Name Pattern Sets", () => {
+    const cultures = [
+        "easterling",
+        "fantasy",
+        "forest dweller",
+        "gem tinkerer",
+        "hill feaster",
+        "metal miner",
+        "mud grubber",
+        "old worlder",
+        "scale bearer",
+        "war bringer",
+    ];
+    test.each(cultures)("should return pattern set for %s", (culture) => {
+        const patternSet = getCultureNamePatternSet(culture);
+        expect(patternSet).toBeDefined();
+        expect(patternSet.name).toBe(culture);
+        expect(patternSet.culture).toBeDefined();
+        expect(patternSet.country).toBeDefined();
+        expect(patternSet.family).toBeDefined();
+        expect(patternSet.female).toBeDefined();
+        expect(patternSet.male).toBeDefined();
+        expect(patternSet.town).toBeDefined();
     });
-    test("generates the same name for the same seed", () => {
-        const name1 = Taverns.generate(SEED);
-        const name2 = Taverns.generate(SEED);
-        expect(name1).toBe(name2);
-    });
-});
-describe("Planet name generator", () => {
-    test("generates a planet name with a seed", () => {
-        const name = Planets.generate(SEED);
-        expect(typeof name).toBe("string");
-        expect(name.length).toBeGreaterThan(0);
-    });
-    test("generates the same name for the same seed", () => {
-        const name1 = Planets.generate(SEED);
-        const name2 = Planets.generate(SEED);
-        expect(name1).toBe(name2);
-    });
-});
-describe("Magic item generator", () => {
-    test("generates a magic item with a seed", () => {
-        const item = MagicItems.generate(SEED);
-        expect(typeof item).toBe("string");
-        expect(item.length).toBeGreaterThan(0);
-    });
-    test("generates the same item for the same seed", () => {
-        const item1 = MagicItems.generate(SEED);
-        const item2 = MagicItems.generate(SEED);
-        expect(item1).toBe(item2);
+    test("should throw error for unknown culture", () => {
+        expect(() => getCultureNamePatternSet("unknown")).toThrow("Unknown culture name pattern set: unknown");
     });
 });
-describe("Invented name generator", () => {
-    test("generates a name from a pattern with a seed", () => {
-        const patterns = ["POTATO"];
-        const names = Invented.generate(patterns, SEED, 1);
-        expect(Array.isArray(names)).toBe(true);
-        expect(names.length).toBe(1);
-        expect(names[0]).toBe("Potato");
+describe("Classic Race Name Pattern Sets", () => {
+    const races = [
+        "dragonborn",
+        "dwarf",
+        "elf",
+        "gnome",
+        "goblin",
+        "half-elf",
+        "half-orc",
+        "halfling",
+        "human",
+        "orc",
+        "tiefling",
+        "troll",
+    ];
+    test.each(races)("should return pattern set for %s", (race) => {
+        const patternSet = getClassicRaceNamePatternSet(race);
+        expect(patternSet).toBeDefined();
     });
-    test("generates the same name for the same seed and pattern", () => {
-        const patterns = ["POTATO"];
-        const names1 = Invented.generate(patterns, SEED, 1);
-        const names2 = Invented.generate(patterns, SEED, 1);
-        expect(names1[0]).toBe(names2[0]);
+    test("should throw error for unknown race", () => {
+        expect(() => getClassicRaceNamePatternSet("unknown")).toThrow("Unknown classic race name pattern set: unknown");
+    });
+});
+describe("Generators", () => {
+    test("getMagicItemNameGenerator should return a generator", () => {
+        const generator = getMagicItemNameGenerator();
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("magic_item");
+        const names = generator.generate(5);
+        expect(names).toHaveLength(5);
+        names.forEach((name) => expect(typeof name).toBe("string"));
+    });
+    test("getModelNumberNameGenerator should return a generator", () => {
+        const generator = getModelNumberNameGenerator();
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("model_number");
+        const names = generator.generate(5);
+        expect(names).toHaveLength(5);
+        names.forEach((name) => expect(typeof name).toBe("string"));
+    });
+    test("getPlanetNameGenerator should return a generator", () => {
+        const generator = getPlanetNameGenerator();
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("planet");
+        const names = generator.generate(5);
+        expect(names).toHaveLength(5);
+        names.forEach((name) => expect(typeof name).toBe("string"));
+    });
+    test("getStarNameGenerator should return a generator", () => {
+        const generator = getStarNameGenerator();
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("star");
+        const names = generator.generate(5);
+        expect(names).toHaveLength(5);
+        names.forEach((name) => expect(typeof name).toBe("string"));
+    });
+    test("getStarNationNameGenerator should return a generator", () => {
+        const generator = getStarNationNameGenerator();
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("star_nation");
+        const names = generator.generate(5);
+        expect(names).toHaveLength(5);
+        names.forEach((name) => expect(typeof name).toBe("string"));
+    });
+    test("getNameGeneratorForPatternSet should return a generator", () => {
+        const patterns = ["test"];
+        const generator = getNameGeneratorForPatternSet("test_gen", patterns);
+        expect(generator).toBeInstanceOf(BaseNameGenerator);
+        expect(generator.name).toBe("test_gen");
+        const names = generator.generate(1);
+        expect(names).toHaveLength(1);
+        expect(typeof names[0]).toBe("string");
+        expect(names[0].length).toBeGreaterThan(0);
     });
 });

@@ -1,0 +1,106 @@
+{
+    "name": "hill feaster",
+    "culture": [
+        "pmlMy",
+        "pmlMyN",
+        "w(m,y)e(IE,Y)",
+        "vpvlY"
+    ],
+    "country": [
+        "evlvlIA",
+        "lvevk+IA",
+        "vnmlvbA",
+        "vlxRIA"
+    ],
+    "family": {
+        "patterns": [
+            "BvdvnS",
+            "pvMpu"
+        ],
+        "combinations": [
+            [
+                [
+                    "BRANDY",
+                    "FEATHER",
+                    "HAIRY",
+                    "HOG",
+                    "HORN",
+                    "LITTLE",
+                    "LONG",
+                    "OAK",
+                    "OLD",
+                    "PROUD",
+                    "PUDDI",
+                    "SWIFT",
+                    "UNDER",
+                    "WANDER",
+                    "WHIT"
+                ],
+                [
+                    "BELLY",
+                    "BOTTOM",
+                    "DALE",
+                    "FOOT",
+                    "HOUSE",
+                    "PEN",
+                    "WOOD",
+                    "WORT"
+                ]
+            ]
+        ]
+    },
+    "female": [
+        "oEOnY",
+        "oEARL",
+        "pELInDA",
+        "mvlvnoA",
+        "plvSovn",
+        "Mvovlpvlo",
+        "pvfvnA"
+    ],
+    "male": [
+        "BvlBv",
+        "svnwvsE",
+        "pvPPvn",
+        "pvlvplvn",
+        "wvnflvo",
+        "pvlnO",
+        "vovlpvRT"
+    ],
+    "town": {
+        "patterns": [],
+        "combinations": [
+            [
+                [
+                    "AUTUMN",
+                    "BETTER",
+                    "GOLD",
+                    "GREEN",
+                    "JOLLY",
+                    "SPRING",
+                    "SUMMER",
+                    "WARM",
+                    "WHITE"
+                ],
+                [
+                    "",
+                    " "
+                ],
+                [
+                    "FALLS",
+                    "FORD",
+                    "GLADE",
+                    "HAVEN",
+                    "HILL",
+                    "HOLLOW",
+                    "HOME",
+                    "LODGE",
+                    "MEADOW",
+                    "SHIRE",
+                    "TOP",
+                    "WOOD"
+                ]
+            ]
+        ]
+    }
+}

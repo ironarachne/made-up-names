@@ -1,6 +1,6 @@
 {
   "name": "@ironarachne/made-up-names",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "A module for generating fictional names",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -9,34 +9,7 @@
     "biome": "biome ci src/*.ts",
     "build": "tsc",
     "docs": "typedoc --out docs src/index.ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
-  },
-  "jest": {
-    "extensionsToTreatAsEsm": [
-      ".ts"
-    ],
-    "moduleDirectories": [
-      "<rootDir>/../",
-      "<rootDir>/src/",
-      "node_modules"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "ts"
-    ],
-    "moduleNameMapper": {
-      "^(\\.{1,2}/.*)\\.js$": "$1"
-    },
-    "rootDir": ".",
-    "transform": {
-      "^.+\\.(t|j)s$": [
-        "ts-jest",
-        {
-          "useESM": true
-        }
-      ]
-    }
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -55,18 +28,15 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",
     "@biomejs/biome": "1.5.3",
-    "@jest/globals": "^29.1.1",
     "@types/lodash": "^4.14.199",
-    "babel-jest": "^29.1.1",
-    "jest": "^29.1.1",
-    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typedoc": "^0.25.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^4.0.15"
   },
   "dependencies": {
-    "@ironarachne/rng": "^2.1.1",
-    "@ironarachne/word-generator": "^1.2.0",
+    "@ironarachne/rng": "^2.1.2",
+    "@ironarachne/word-generator": "^2.1.1",
     "@ironarachne/words": "^1.0.1",
     "lodash": "^4.17.21"
   }
