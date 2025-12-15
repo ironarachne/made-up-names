@@ -154,6 +154,11 @@ export class BaseNameGenerator implements NameGenerator {
         name += this.random.item(partSet);
       }
     }
+
+    this.wordGenerator.patterns = [name];
+    name = this.wordGenerator.generate();
+    this.wordGenerator.patterns = this.patterns;
+
     return Words.title(name);
   }
 }

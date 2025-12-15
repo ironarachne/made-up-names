@@ -102,4 +102,19 @@ describe("Generators", () => {
         expect(typeof names[0]).toBe("string");
         expect(names[0].length).toBeGreaterThan(0);
     });
+    test("should generate title case names from uppercase patterns", () => {
+        const patterns = ["TEST"];
+        const generator = getNameGeneratorForPatternSet("test_upper", patterns);
+        const name = generator.generate(1)[0];
+        expect(name).toBe("Test");
+    });
+    test("should generate title case names from uppercase combinations", () => {
+        const patterns = {
+            patterns: [],
+            combinations: [[["TEST"], ["CASE"]]],
+        };
+        const generator = getNameGeneratorForPatternSet("test_upper_combo", patterns);
+        const name = generator.generate(1)[0];
+        expect(name).toBe("Testcase");
+    });
 });
