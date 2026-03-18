@@ -1,6 +1,6 @@
 {
   "name": "@ironarachne/made-up-names",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "description": "A module for generating fictional names",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ironarachne/made-up-names.git"
+    "url": "git+https://codeberg.org/ironarachne/made-up-names.git"
   },
   "keywords": [
     "names"
@@ -21,9 +21,9 @@
   "author": "Ben Overmyer <ben@overmyer.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ironarachne/made-up-names/issues"
+    "url": "https://codeberg.org/ironarachne/made-up-names/issues"
   },
-  "homepage": "https://github.com/ironarachne/made-up-names#readme",
+  "homepage": "https://made-up-names.ironarachne.com/docs",
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",
