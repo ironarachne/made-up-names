@@ -1,6 +1,6 @@
 # Made Up Names
 
-This is a library for generating random fictional names. It provides generators for various categories like magic items, planets, stars, and cultural names (fantasy races, etc.).
+This is a library for generating random fictional names. It provides generators for categories like magic items, planets, stars, and cultural names (fantasy races, etc.).
 
 ## Installation
 
