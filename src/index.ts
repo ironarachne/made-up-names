@@ -1,6 +1,5 @@
 import { RNG } from "@ironarachne/rng";
 import { WordGenerator } from "@ironarachne/word-generator";
-import * as Words from "@ironarachne/words";
 import easterling from "./cultures/easterling.json" with { type: "json" };
 import fantasy from "./cultures/fantasy.json" with { type: "json" };
 import forestDweller from "./cultures/forest_dweller.json" with { type: "json" };
@@ -11,6 +10,13 @@ import mudGrubber from "./cultures/mud_grubber.json" with { type: "json" };
 import oldWorlder from "./cultures/old_worlder.json" with { type: "json" };
 import scaleBearer from "./cultures/scale_bearer.json" with { type: "json" };
 import warBringer from "./cultures/war_bringer.json" with { type: "json" };
+
+const capitalize = (s: string): string => {
+  if (!s) {
+    return "";
+  }
+  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+};
 
 /**
  * A name generator.
@@ -127,7 +133,7 @@ export class BaseNameGenerator implements NameGenerator {
       names.push(this.generateOne());
     }
 
-    return names.map(Words.capitalize);
+    return names.map(capitalize);
   }
 
   /**
@@ -159,7 +165,7 @@ export class BaseNameGenerator implements NameGenerator {
     name = this.wordGenerator.generate();
     this.wordGenerator.patterns = this.patterns;
 
-    return Words.title(name);
+    return capitalize(name);
   }
 }
 
