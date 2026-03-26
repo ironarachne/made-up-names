@@ -1,6 +1,5 @@
 import { RNG } from "@ironarachne/rng";
 import { WordGenerator } from "@ironarachne/word-generator";
-import * as Words from "@ironarachne/words";
 import easterling from "./cultures/easterling.json" with { type: "json" };
 import fantasy from "./cultures/fantasy.json" with { type: "json" };
 import forestDweller from "./cultures/forest_dweller.json" with { type: "json" };
@@ -11,6 +10,12 @@ import mudGrubber from "./cultures/mud_grubber.json" with { type: "json" };
 import oldWorlder from "./cultures/old_worlder.json" with { type: "json" };
 import scaleBearer from "./cultures/scale_bearer.json" with { type: "json" };
 import warBringer from "./cultures/war_bringer.json" with { type: "json" };
+const capitalize = (s) => {
+    if (!s) {
+        return "";
+    }
+    return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+};
 /**
  * A base class for name generators.
  */
@@ -52,7 +57,7 @@ export class BaseNameGenerator {
         for (let i = 0; i < numberOfNames; i++) {
             names.push(this.generateOne());
         }
-        return names.map(Words.capitalize);
+        return names.map(capitalize);
     }
     /**
      * Generates a single name.
@@ -78,7 +83,7 @@ export class BaseNameGenerator {
         this.wordGenerator.patterns = [name];
         name = this.wordGenerator.generate();
         this.wordGenerator.patterns = this.patterns;
-        return Words.title(name);
+        return capitalize(name);
     }
 }
 /**
@@ -223,7 +228,7 @@ export function getClassicRaceNamePatternSet(name) {
         case "halfling":
             return getCultureNamePatternSet("hill feaster");
         case "human":
-            return getCultureNamePatternSet("old worlder");
+            return getCultureNamePatternSet("fantasy");
         case "orc":
             return getCultureNamePatternSet("war bringer");
         case "tiefling":

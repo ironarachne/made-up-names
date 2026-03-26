@@ -333,7 +333,7 @@ export function getClassicRaceNamePatternSet(
     case "halfling":
       return getCultureNamePatternSet("hill feaster");
     case "human":
-      return getCultureNamePatternSet("old worlder");
+      return getCultureNamePatternSet("fantasy");
     case "orc":
       return getCultureNamePatternSet("war bringer");
     case "tiefling":
