@@ -11,6 +11,8 @@
     "docs": "typedoc --out docs src/index.ts",
     "generate:names": "ts-node-esm scripts/generate-names.ts",
     "score:variety": "ts-node-esm scripts/score-variety.ts",
+    "score:corpus-structure": "ts-node-esm scripts/score-corpus-structure.ts",
+    "report:culture-quality": "ts-node-esm scripts/report-culture-quality.ts",
     "test": "vitest run"
   },
   "repository": {
@@ -37,6 +39,6 @@
   },
   "dependencies": {
     "@ironarachne/rng": "^2.3.1",
-    "@ironarachne/word-generator": "^2.3.0"
+    "@ironarachne/word-generator": "^2.3.1"
   }
 }
