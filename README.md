@@ -2,6 +2,8 @@
 
 This is a library for generating random fictional names. It provides generators for categories like magic items, planets, stars, and cultural names (fantasy races, etc.).
 
+Documentation is available at [ironarachne.github.io/made-up-names](https://ironarachne.github.io/made-up-names).
+
 ## Installation
 
 ```bash
@@ -136,4 +138,4 @@ type NameGeneratorPatternSet = {
 
 ## Documentation
 
-For more detailed documentation, see the generated docs in the `docs/` directory or run `npm run docs`.
+For more detailed documentation, see [ironarachne.github.io/made-up-names](https://ironarachne.github.io/made-up-names), the generated docs in the `docs/` directory, or run `npm run docs`.
