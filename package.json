@@ -62,8 +62,8 @@
     "vitest": "^4.0.15"
   },
   "dependencies": {
-    "@ironarachne/rng": "^2.3.1",
-    "@ironarachne/word-generator": "^2.3.1"
+    "@ironarachne/rng": "^3.0.1",
+    "@ironarachne/word-generator": "^3.0.1"
   },
   "allowScripts": {
     "esbuild@0.28.2": true
