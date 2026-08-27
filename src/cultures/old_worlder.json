@@ -1,17 +1,7 @@
 {
   "name": "old worlder",
-  "culture": [
-    "kmlMyNmN",
-    "kmlMyNm",
-    "kmTHmk"
-  ],
-  "country": [
-    "pmkLAND",
-    "lyMvNIEN",
-    "evtLAND",
-    "pvtmNIEN",
-    "eynMARK"
-  ],
+  "culture": ["kmlMyNmN", "kmlMyNm", "kmTHmk"],
+  "country": ["pmkLAND", "lyMvNIEN", "evtLAND", "pvtmNIEN", "eynMARK"],
   "family": [
     "ivRSoMANN",
     "SCHnveZLmR",

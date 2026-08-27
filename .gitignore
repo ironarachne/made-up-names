@@ -1,2 +1,7 @@
 node_modules
+dist
+docs
+*.tsbuildinfo
+.DS_Store
+npm-debug.log*
 .aider*

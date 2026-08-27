@@ -1,22 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    },
     "declaration": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "forceConsistentCasingInFileNames": true,
-    "strictPropertyInitialization": false
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "dist"],
-  "include": ["./src/**/*", "./tests/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "docs"]
 }

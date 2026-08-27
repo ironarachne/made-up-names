@@ -1,22 +1,9 @@
 {
   "name": "hill feaster",
-  "culture": [
-    "pmlMy",
-    "pmlMyN",
-    "w(m,y)e(IE,Y)",
-    "vpvlY"
-  ],
-  "country": [
-    "evlvlIA",
-    "lvevk+IA",
-    "vnmlvbA",
-    "vlxRIA"
-  ],
+  "culture": ["pmlMy", "pmlMyN", "w(m,y)e(IE,Y)", "vpvlY"],
+  "country": ["evlvlIA", "lvevk+IA", "vnmlvbA", "vlxRIA"],
   "family": {
-    "patterns": [
-      "BvdvnS",
-      "pvMpu"
-    ],
+    "patterns": ["BvdvnS", "pvMpu"],
     "combinations": [
       [
         [
@@ -36,16 +23,7 @@
           "WANDER",
           "WHIT"
         ],
-        [
-          "BELLY",
-          "BOTTOM",
-          "DALE",
-          "FOOT",
-          "HOUSE",
-          "PEN",
-          "WOOD",
-          "WORT"
-        ]
+        ["BELLY", "BOTTOM", "DALE", "FOOT", "HOUSE", "PEN", "WOOD", "WORT"]
       ]
     ]
   },
@@ -82,10 +60,7 @@
           "WARM",
           "WHITE"
         ],
-        [
-          "",
-          " "
-        ],
+        ["", " "],
         [
           "FALLS",
           "FORD",

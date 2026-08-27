@@ -1,25 +1,9 @@
 {
   "name": "gem tinkerer",
-  "culture": [
-    "pmlMy",
-    "pmlMyN",
-    "w(m,y)e(IE,Y)",
-    "vpvlY"
-  ],
-  "country": [
-    "evlvlIA",
-    "lvevk+IA",
-    "vnmlvbA",
-    "vlxRIA"
-  ],
+  "culture": ["pmlMy", "pmlMyN", "w(m,y)e(IE,Y)", "vpvlY"],
+  "country": ["evlvlIA", "lvevk+IA", "vnmlvbA", "vlxRIA"],
   "family": {
-    "patterns": [
-      "vPSpvMS",
-      "cvnKLER",
-      "cvdLER",
-      "cvdER",
-      "pvpLOp"
-    ],
+    "patterns": ["vPSpvMS", "cvnKLER", "cvdLER", "cvdER", "pvpLOp"],
     "combinations": [
       [
         [
@@ -111,10 +95,7 @@
           "WHITE",
           "YELLOW"
         ],
-        [
-          "",
-          " "
-        ],
+        ["", " "],
         [
           "BARROW",
           "CLIFF",

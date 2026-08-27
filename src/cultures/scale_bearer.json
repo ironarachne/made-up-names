@@ -1,18 +1,7 @@
 {
   "name": "scale bearer",
-  "culture": [
-    "bml+vk",
-    "lvl+vsI(A,E)(R,N)I",
-    "pml+vsI(A,E)(R,N)",
-    "pml+vsI"
-  ],
-  "country": [
-    "pvlvlIA",
-    "lvpvpIA",
-    "vnvlvpA",
-    "vpvlY",
-    "vlxRIA"
-  ],
+  "culture": ["bml+vk", "lvl+vsI(A,E)(R,N)I", "pml+vsI(A,E)(R,N)", "pml+vsI"],
+  "country": ["pvlvlIA", "lvpvpIA", "vnvlvpA", "vpvlY", "vlxRIA"],
   "family": {
     "patterns": [
       "vlpvlvn",
@@ -58,19 +47,8 @@
       ]
     ]
   },
-  "female": [
-    "tvMvt",
-    "cv+l",
-    "cvlv",
-    "ovRRv",
-    "lAIvNN"
-  ],
-  "male": [
-    "vlKvSIA",
-    "cvLvSAR",
-    "cvlvt",
-    "ovnv+R"
-  ],
+  "female": ["tvMvt", "cv+l", "cvlv", "ovRRv", "lAIvNN"],
+  "male": ["vlKvSIA", "cvLvSAR", "cvlvt", "ovnv+R"],
   "town": {
     "patterns": [
       "pvlvlIA",

@@ -1,5 +1,8 @@
 import { RNG } from "@ironarachne/rng";
-import { getCultureNamePatternSet, getNameGeneratorForPatternSet } from "../src/index.ts";
+import {
+  getCultureNamePatternSet,
+  getNameGeneratorForPatternSet,
+} from "../src/index.js";
 
 const VALID_CATEGORIES = [
   "culture",
@@ -68,9 +71,7 @@ function parseArgs(argv: string[]): CliOptions {
   }
 
   if (!VALID_CATEGORIES.includes(categoryInput as Category)) {
-    throw new Error(
-      `category must be one of: ${VALID_CATEGORIES.join(", ")}.`,
-    );
+    throw new Error(`category must be one of: ${VALID_CATEGORIES.join(", ")}.`);
   }
 
   return {

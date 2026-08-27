@@ -1,12 +1,12 @@
 import { resolve } from "node:path";
+import { describe, expect, test } from "vitest";
 import {
   balanceGeometricMean1000,
   balanceLabel,
   corpusJsonPathForCulture,
   corpusStructureComposite1000,
-} from "@/culture-quality-report";
-import { scoreNameVariety } from "@/name-variety-score";
-import { describe, expect, test } from "vitest";
+} from "../tools/culture-quality-report.js";
+import { scoreNameVariety } from "../tools/name-variety-score.js";
 
 describe("corpusJsonPathForCulture", () => {
   test("slugifies culture name under src/research", () => {

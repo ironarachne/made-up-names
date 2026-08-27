@@ -137,27 +137,27 @@
       "θl(β,γ,δ)(L,R)Nδ(ε,ι)",
       "γσlβ(M,N)(θ,ζ)RIεL",
       "βl+(γ,δ)(M,N)θL",
-    "AMβKIIR",
-    "GALβN(δ,σ)DεL",
-    "β(l,n)(θ,ζ)(β,γ,δ)(M,N)",
-    "γl+(β,γ)(δ,σ)N",
-    "θ(M,N)(p,j)l(β,γ)R",
-    "σβ(γ,δ)+(l,n)M",
-    "δl(ι,k)(γ,ε)(n,m)",
-    "βw(γ,δ)w(β,ε)L",
-    "γ(α,τ)(l,n)(θ,ζ)D",
-    "εθζ(l,n)(β,γ)(s,z)",
-    "β(l,n)(θ,ζ,p)(β,γ,δ)(M,N)",
-    "γl+(β,γ)(δ,σ)(I,E)L",
-    "θ(M,N)(p,j)(l,n)(R,L)",
-    "σβ(γ,δ)+(l,n)(D,R)",
-    "δl(ι,k)(γ,ε)(M,N)",
-    "βw(γ,δ)w(β,ε)(R,L)",
-    "γ(α,τ)(l,n)(θ,ζ)(N,M)",
-    "εθζ(l,n)(p,j)(s,z)",
-    "βγ(δ,σ)(l,n)+(M,N)",
-    "θl(β,γ,δ)(q,w)(I,E)L",
-    "σ(M,N)(β,γ)(θ,ζ)R"
+      "AMβKIIR",
+      "GALβN(δ,σ)DεL",
+      "β(l,n)(θ,ζ)(β,γ,δ)(M,N)",
+      "γl+(β,γ)(δ,σ)N",
+      "θ(M,N)(p,j)l(β,γ)R",
+      "σβ(γ,δ)+(l,n)M",
+      "δl(ι,k)(γ,ε)(n,m)",
+      "βw(γ,δ)w(β,ε)L",
+      "γ(α,τ)(l,n)(θ,ζ)D",
+      "εθζ(l,n)(β,γ)(s,z)",
+      "β(l,n)(θ,ζ,p)(β,γ,δ)(M,N)",
+      "γl+(β,γ)(δ,σ)(I,E)L",
+      "θ(M,N)(p,j)(l,n)(R,L)",
+      "σβ(γ,δ)+(l,n)(D,R)",
+      "δl(ι,k)(γ,ε)(M,N)",
+      "βw(γ,δ)w(β,ε)(R,L)",
+      "γ(α,τ)(l,n)(θ,ζ)(N,M)",
+      "εθζ(l,n)(p,j)(s,z)",
+      "βγ(δ,σ)(l,n)+(M,N)",
+      "θl(β,γ,δ)(q,w)(I,E)L",
+      "σ(M,N)(β,γ)(θ,ζ)R"
     ],
     "combinations": [
       [
@@ -227,57 +227,15 @@
           "GREY",
           "RED"
         ],
-        [
-          "ELF",
-          "KIND",
-          "FOLK",
-          "BORN",
-          "BLOOD",
-          "HEART",
-          "SONG"
-        ]
+        ["ELF", "KIND", "FOLK", "BORN", "BLOOD", "HEART", "SONG"]
       ],
       [
-        [
-          "FEAN",
-          "FIN",
-          "ORO",
-          "GALA",
-          "THRA",
-          "CELE",
-          "ELRO",
-          "GILD"
-        ],
-        [
-          "ORION",
-          "WION",
-          "DEL",
-          "NOR",
-          "DIR",
-          "BORN",
-          "MIR",
-          "LAS"
-        ]
+        ["FEAN", "FIN", "ORO", "GALA", "THRA", "CELE", "ELRO", "GILD"],
+        ["ORION", "WION", "DEL", "NOR", "DIR", "BORN", "MIR", "LAS"]
       ],
       [
-        [
-          "NAIL",
-          "XIL",
-          "ORO",
-          "FEA",
-          "UND",
-          "CEL",
-          "ARA"
-        ],
-        [
-          "LO",
-          "MIR",
-          "IEL",
-          "DIEL",
-          "STAR",
-          "WYN",
-          "NOR"
-        ]
+        ["NAIL", "XIL", "ORO", "FEA", "UND", "CEL", "ARA"],
+        ["LO", "MIR", "IEL", "DIEL", "STAR", "WYN", "NOR"]
       ]
     ]
   },

@@ -1,4 +1,5 @@
 import { resolve } from "node:path";
+import { describe, expect, test } from "vitest";
 import {
   cosineSimilarity,
   defaultForestDwellerCorpusPath,
@@ -8,8 +9,7 @@ import {
   skeletonNgramCosine,
   suffixPoolMatchRate,
   toSkeleton,
-} from "@/corpus-structure-score";
-import { describe, expect, test } from "vitest";
+} from "../tools/corpus-structure-score.js";
 
 describe("toSkeleton", () => {
   test("maps letters to V and C", () => {

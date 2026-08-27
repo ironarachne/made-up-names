@@ -1,11 +1,6 @@
 {
   "name": "war bringer",
-  "culture": [
-    "pmlMyNmN",
-    "kmlMyNm",
-    "kyTHmkI",
-    "pOhRAkI"
-  ],
+  "culture": ["pmlMyNmN", "kmlMyNm", "kyTHmkI", "pOhRAkI"],
   "country": [
     "pvlvlIA",
     "lvpvpIA",
@@ -52,16 +47,7 @@
           "SMASH",
           "WAR"
         ],
-        [
-          "AXE",
-          "BLADE",
-          "CHOPPER",
-          "CUTTER",
-          "FIST",
-          "KILLER",
-          "REND",
-          "SMASH"
-        ]
+        ["AXE", "BLADE", "CHOPPER", "CUTTER", "FIST", "KILLER", "REND", "SMASH"]
       ]
     ]
   },
@@ -184,10 +170,7 @@
           "WHITE",
           "YELLOW"
         ],
-        [
-          "",
-          " "
-        ],
+        ["", " "],
         [
           "BARROWS",
           "BEQUEST",

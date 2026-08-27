@@ -1,15 +1,15 @@
+import { describe, expect, test } from "vitest";
 import {
-  getCultureNamePatternSet,
+  BaseNameGenerator,
   getClassicRaceNamePatternSet,
+  getCultureNamePatternSet,
   getMagicItemNameGenerator,
   getModelNumberNameGenerator,
+  getNameGeneratorForPatternSet,
   getPlanetNameGenerator,
   getStarNameGenerator,
   getStarNationNameGenerator,
-  getNameGeneratorForPatternSet,
-  BaseNameGenerator,
-} from "@/index";
-import { describe, test, expect } from "vitest";
+} from "../src/index.js";
 
 describe("Culture Name Pattern Sets", () => {
   const cultures = [
@@ -39,7 +39,7 @@ describe("Culture Name Pattern Sets", () => {
 
   test("should throw error for unknown culture", () => {
     expect(() => getCultureNamePatternSet("unknown")).toThrow(
-      "Unknown culture name pattern set: unknown"
+      "Unknown culture name pattern set: unknown",
     );
   });
 });
@@ -67,7 +67,7 @@ describe("Classic Race Name Pattern Sets", () => {
 
   test("should throw error for unknown race", () => {
     expect(() => getClassicRaceNamePatternSet("unknown")).toThrow(
-      "Unknown classic race name pattern set: unknown"
+      "Unknown classic race name pattern set: unknown",
     );
   });
 });
@@ -79,7 +79,9 @@ describe("Generators", () => {
     expect(generator.name).toBe("magic_item");
     const names = generator.generate(5);
     expect(names).toHaveLength(5);
-    names.forEach((name) => expect(typeof name).toBe("string"));
+    for (const name of names) {
+      expect(typeof name).toBe("string");
+    }
   });
 
   test("getModelNumberNameGenerator should return a generator", () => {
@@ -88,7 +90,9 @@ describe("Generators", () => {
     expect(generator.name).toBe("model_number");
     const names = generator.generate(5);
     expect(names).toHaveLength(5);
-    names.forEach((name) => expect(typeof name).toBe("string"));
+    for (const name of names) {
+      expect(typeof name).toBe("string");
+    }
   });
 
   test("getPlanetNameGenerator should return a generator", () => {
@@ -97,7 +101,9 @@ describe("Generators", () => {
     expect(generator.name).toBe("planet");
     const names = generator.generate(5);
     expect(names).toHaveLength(5);
-    names.forEach((name) => expect(typeof name).toBe("string"));
+    for (const name of names) {
+      expect(typeof name).toBe("string");
+    }
   });
 
   test("getStarNameGenerator should return a generator", () => {
@@ -106,7 +112,9 @@ describe("Generators", () => {
     expect(generator.name).toBe("star");
     const names = generator.generate(5);
     expect(names).toHaveLength(5);
-    names.forEach((name) => expect(typeof name).toBe("string"));
+    for (const name of names) {
+      expect(typeof name).toBe("string");
+    }
   });
 
   test("getStarNationNameGenerator should return a generator", () => {
@@ -115,7 +123,9 @@ describe("Generators", () => {
     expect(generator.name).toBe("star_nation");
     const names = generator.generate(5);
     expect(names).toHaveLength(5);
-    names.forEach((name) => expect(typeof name).toBe("string"));
+    for (const name of names) {
+      expect(typeof name).toBe("string");
+    }
   });
 
   test("getNameGeneratorForPatternSet should return a generator", () => {
@@ -141,7 +151,10 @@ describe("Generators", () => {
       patterns: [],
       combinations: [[["TEST"], ["CASE"]]],
     };
-    const generator = getNameGeneratorForPatternSet("test_upper_combo", patterns);
+    const generator = getNameGeneratorForPatternSet(
+      "test_upper_combo",
+      patterns,
+    );
     const name = generator.generate(1)[0];
     expect(name).toBe("Testcase");
   });
