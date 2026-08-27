@@ -136,6 +136,33 @@ type NameGeneratorPatternSet = {
 };
 ```
 
+## Reproducible output
+
+Every generator factory takes an optional `RNG` from
+[`@ironarachne/rng`](https://github.com/ironarachne/rng). Pass a seeded one when
+you need the same names back:
+
+```typescript
+import { RNG } from "@ironarachne/rng";
+import { getPlanetNameGenerator } from "@ironarachne/made-up-names";
+
+const planets = getPlanetNameGenerator(new RNG(42)).generate(5);
+```
+
+Without one, each generator seeds itself from `Date.now()`.
+
 ## Documentation
 
-For more detailed documentation, see [ironarachne.github.io/made-up-names](https://ironarachne.github.io/made-up-names), the generated docs in the `docs/` directory, or run `npm run docs`.
+Full API documentation is published at
+[ironarachne.github.io/made-up-names](https://ironarachne.github.io/made-up-names).
+Run `npm run docs` to build it locally.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, the pull request process, and
+how releases are cut, and [CODE_STYLE.md](CODE_STYLE.md) for the conventions
+this codebase follows.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

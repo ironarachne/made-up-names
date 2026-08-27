@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest a new generator, culture, or capability.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to generate that the library makes hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API
+      description: What would the call look like?
+      render: typescript
+  - type: textarea
+    id: samples
+    attributes:
+      label: Sample names
+      description: >
+        If this is a new culture or generator, give a handful of names that
+        show the flavor you are after.
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: This can be implemented without adding a runtime dependency.
+        - label: This does not change the names existing cultures produce.

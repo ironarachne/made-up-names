@@ -3,6 +3,10 @@ import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { RNG } from "@ironarachne/rng";
 import {
+  getCultureNamePatternSet,
+  getNameGeneratorForPatternSet,
+} from "../src/index.js";
+import {
   CORPUS_STRUCTURE_CATEGORIES,
   type CorpusStructureCategory,
   corpusStructureWantsHelp,
@@ -10,11 +14,7 @@ import {
   parseCorpusStructureCliArgs,
   skeletonNgramCosine,
   suffixPoolMatchRate,
-} from "../src/corpus-structure-score.ts";
-import {
-  getCultureNamePatternSet,
-  getNameGeneratorForPatternSet,
-} from "../src/index.ts";
+} from "../tools/corpus-structure-score.js";
 
 type CorpusFile = {
   categories?: Record<string, string[]>;

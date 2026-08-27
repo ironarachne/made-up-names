@@ -1,17 +1,7 @@
 {
   "name": "metal miner",
-  "culture": [
-    "pmlMyNmN",
-    "kmlMyNm",
-    "kyTHmkI",
-    "pOhRAkI"
-  ],
-  "country": [
-    "evlvlIA",
-    "lvevk+IA",
-    "vnmlvbA",
-    "vlxRIA"
-  ],
+  "culture": ["pmlMyNmN", "kmlMyNm", "kyTHmkI", "pOhRAkI"],
+  "country": ["evlvlIA", "lvevk+IA", "vnmlvbA", "vlxRIA"],
   "family": {
     "patterns": [],
     "combinations": [
@@ -100,10 +90,7 @@
           "WHITE",
           "YELLOW"
         ],
-        [
-          "",
-          " "
-        ],
+        ["", " "],
         [
           "BARROW",
           "CLIFF",

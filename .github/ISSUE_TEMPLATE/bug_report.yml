@@ -1,0 +1,41 @@
+name: Bug report
+description: A generator does not behave as documented.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you observe, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >
+        The smallest snippet that shows the problem. Pass an explicit seeded
+        `RNG` — generator output is only reproducible with one.
+      render: typescript
+    validations:
+      required: true
+  - type: input
+    id: culture
+    attributes:
+      label: Culture and category
+      description: If this involves a culture generator, which one?
+      placeholder: forest_dweller / female
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: 2.4.1
+    validations:
+      required: true
+  - type: input
+    id: node-version
+    attributes:
+      label: Node version
+      placeholder: 22.11.0
+    validations:
+      required: true

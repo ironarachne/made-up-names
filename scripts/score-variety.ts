@@ -2,8 +2,8 @@ import { RNG } from "@ironarachne/rng";
 import {
   getCultureNamePatternSet,
   getNameGeneratorForPatternSet,
-} from "../src/index.ts";
-import { scoreNameVariety } from "../src/name-variety-score.ts";
+} from "../src/index.js";
+import { scoreNameVariety } from "../tools/name-variety-score.js";
 
 const VALID_CATEGORIES = [
   "culture",
@@ -72,9 +72,7 @@ function parseArgs(argv: string[]): CliOptions {
   }
 
   if (!VALID_CATEGORIES.includes(categoryInput as Category)) {
-    throw new Error(
-      `category must be one of: ${VALID_CATEGORIES.join(", ")}.`,
-    );
+    throw new Error(`category must be one of: ${VALID_CATEGORIES.join(", ")}.`);
   }
 
   return {

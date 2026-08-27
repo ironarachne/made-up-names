@@ -1,11 +1,6 @@
 {
   "name": "mud grubber",
-  "culture": [
-    "pmlMyNmN",
-    "kmlMyNm",
-    "kyTHmkI",
-    "pOhRAkI"
-  ],
+  "culture": ["pmlMyNmN", "kmlMyNm", "kyTHmkI", "pOhRAkI"],
   "country": [
     "pvlvlIA",
     "lvpvpIA",
@@ -16,10 +11,7 @@
     "vlxRIA"
   ],
   "family": {
-    "patterns": [
-      "BvdvnS",
-      "pvMpu"
-    ],
+    "patterns": ["BvdvnS", "pvMpu"],
     "combinations": [
       [
         [
@@ -109,9 +101,7 @@
           "RED",
           "YELLOW"
         ],
-        [
-          " "
-        ],
+        [" "],
         [
           "BARROWS",
           "CLIFFS",

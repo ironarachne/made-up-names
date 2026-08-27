@@ -58,36 +58,11 @@
           "MOON",
           "SKY"
         ],
-        [
-          "GUARD",
-          "WARD",
-          "RIDER",
-          "WALKER",
-          "BORN",
-          "SEEKER",
-          "SPEAR",
-          "KIN"
-        ]
+        ["GUARD", "WARD", "RIDER", "WALKER", "BORN", "SEEKER", "SPEAR", "KIN"]
       ],
       [
-        [
-          "HIGH",
-          "DEEP",
-          "FELL",
-          "DUSK",
-          "WILD",
-          "NIGHT",
-          "STAR",
-          "DAWN"
-        ],
-        [
-          "ELF",
-          "KIN",
-          "FOLK",
-          "MEN",
-          "BORN",
-          "WARD"
-        ]
+        ["HIGH", "DEEP", "FELL", "DUSK", "WILD", "NIGHT", "STAR", "DAWN"],
+        ["ELF", "KIN", "FOLK", "MEN", "BORN", "WARD"]
       ]
     ]
   },
@@ -158,16 +133,7 @@
           "DEEP",
           "EVER"
         ],
-        [
-          "LAND",
-          "MARK",
-          "REACH",
-          "HOLD",
-          "HEIM",
-          "GAARD",
-          "DOR",
-          "RIA"
-        ]
+        ["LAND", "MARK", "REACH", "HOLD", "HEIM", "GAARD", "DOR", "RIA"]
       ],
       [
         [
@@ -182,15 +148,7 @@
           "FROST",
           "EMBER"
         ],
-        [
-          "LAND",
-          "MARCH",
-          "FELL",
-          "MOOR",
-          "REACH",
-          "VALE",
-          "HOLD"
-        ]
+        ["LAND", "MARCH", "FELL", "MOOR", "REACH", "VALE", "HOLD"]
       ]
     ]
   },
@@ -282,21 +240,8 @@
         ]
       ],
       [
-        [
-          "SNOW",
-          "STORM",
-          "DUSK",
-          "DAWN",
-          "NIGHT",
-          "FROST"
-        ],
-        [
-          "BORN",
-          "WARD",
-          "SON",
-          "FALL",
-          "BROOK"
-        ]
+        ["SNOW", "STORM", "DUSK", "DAWN", "NIGHT", "FROST"],
+        ["BORN", "WARD", "SON", "FALL", "BROOK"]
       ]
     ]
   },
@@ -472,9 +417,7 @@
           "RED",
           "YELLOW"
         ],
-        [
-          " "
-        ],
+        [" "],
         [
           "BARROWS",
           "CLIFFS",
@@ -525,9 +468,7 @@
           "RγlεpAST",
           "YεNNvtvR"
         ],
-        [
-          "'S "
-        ],
+        ["'S "],
         [
           "FOLLY",
           "BOON",
@@ -543,11 +484,7 @@
         ]
       ],
       [
-        [
-          "vlpvl",
-          "tvnv",
-          "lvpcv"
-        ],
+        ["vlpvl", "tvnv", "lvpcv"],
         [
           "ARM",
           "BEND",
@@ -650,22 +587,9 @@
         ]
       ],
       [
-        [
-          "MINAS",
-          "DOL",
-          "TAR"
-        ],
-        [
-          " "
-        ],
-        [
-          "TIRITH",
-          "MORGUL",
-          "VALON",
-          "BLATHANNA",
-          "CARON",
-          "MIRIEL"
-        ]
+        ["MINAS", "DOL", "TAR"],
+        [" "],
+        ["TIRITH", "MORGUL", "VALON", "BLATHANNA", "CARON", "MIRIEL"]
       ],
       [
         [
@@ -679,19 +603,8 @@
           "ASH",
           "ELM"
         ],
-        [
-          " "
-        ],
-        [
-          "HAVEN",
-          "HOLD",
-          "MARKET",
-          "WATCH",
-          "PASS",
-          "REST",
-          "FALLS",
-          "POINT"
-        ]
+        [" "],
+        ["HAVEN", "HOLD", "MARKET", "WATCH", "PASS", "REST", "FALLS", "POINT"]
       ]
     ]
   }

@@ -1,44 +1,71 @@
 {
   "name": "@ironarachne/made-up-names",
   "version": "2.4.1",
-  "description": "A module for generating fictional names",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "description": "A library for generating random fictional names.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "biome": "biome ci src/*.ts",
     "build": "tsc",
+    "check": "npm run lint && npm run typecheck && npm run build && npm test",
     "docs": "typedoc --out docs src/index.ts",
-    "generate:names": "ts-node-esm scripts/generate-names.ts",
-    "score:variety": "ts-node-esm scripts/score-variety.ts",
-    "score:corpus-structure": "ts-node-esm scripts/score-corpus-structure.ts",
-    "report:culture-quality": "ts-node-esm scripts/report-culture-quality.ts",
-    "test": "vitest run"
+    "generate:names": "tsx scripts/generate-names.ts",
+    "lint": "biome ci src tools tests scripts",
+    "lint:fix": "biome check --fix src tools tests scripts",
+    "prepublishOnly": "npm run build",
+    "report:culture-quality": "tsx scripts/report-culture-quality.ts",
+    "score:corpus-structure": "tsx scripts/score-corpus-structure.ts",
+    "score:variety": "tsx scripts/score-variety.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.tools.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://codeberg.org/ironarachne/made-up-names.git"
+    "url": "git+https://github.com/ironarachne/made-up-names.git"
   },
   "keywords": [
-    "names"
+    "ironarachne",
+    "names",
+    "generator",
+    "fantasy"
   ],
   "author": "Ben Overmyer <ben@overmyer.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://codeberg.org/ironarachne/made-up-names/issues"
+    "url": "https://github.com/ironarachne/made-up-names/issues"
   },
-  "homepage": "https://made-up-names.ironarachne.com/docs",
+  "homepage": "https://ironarachne.github.io/made-up-names",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "devDependencies": {
-    "@babel/preset-env": "^7.22.9",
-    "@babel/preset-typescript": "^7.22.5",
-    "@biomejs/biome": "1.5.3",
-    "ts-node": "^10.9.1",
-    "typedoc": "^0.25.7",
-    "typescript": "^5.1.6",
+    "@biomejs/biome": "^2.3.8",
+    "@types/node": "^20.19.43",
+    "tsx": "^4.20.0",
+    "typedoc": "^0.28.15",
+    "typescript": "^5.9.0",
     "vitest": "^4.0.15"
   },
   "dependencies": {
     "@ironarachne/rng": "^2.3.1",
     "@ironarachne/word-generator": "^2.3.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
